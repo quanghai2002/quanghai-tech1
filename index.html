@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phương Đông</title>
+    <link href="output.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- styles css global -->
+    <style>
+      #root {
+        min-height: 100vh;
+      }
+
+      .quanghai-active-slider .quanghai-item {
+        background: var(
+          --dd-400,
+          linear-gradient(90deg, #50c577 0%, #2dbefc 100%)
+        );
+      }
+      .quanghai-active-slider .quanghai-text {
+        color: white;
+      }
+      .quanghai-active-slider .quanghai-text-2 {
+        color: white;
+      }
+      .quanghai-active-slider .quanghai-text-3 {
+        color: white;
+      }
+
+      .quanghai-active-slider .quanghai-btn {
+        background: linear-gradient(180deg, #ffb469 0%, #e57709 100%);
+        color: white;
+      }
+
+      .quanghai-price {
+        border-radius: 0px 0px 24px 24px;
+        border-right: 2px solid #2dbefc;
+        border-bottom: 2px solid #50c577;
+        border-left: 2px solid #50c577;
+      }
+
+      .swiper-button-next {
+      }
+      /* slider */
+      .abc_next,
+      .abc_prev {
+        -webkit-tap-highlight-color: transparent;
+      }
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        max-width: 290px;
+        width: 290px !important;
+      }
+
+      #footer {
+        background: linear-gradient(90deg, #1cab55 0%, #04a4ec 100%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root" class="font-Roboto max-w-[1920px] w-full overflow-hidden">
+      <!-- header -->
+      <header
+        class="flex w-full items-center justify-around shadow-headerBoxShadow py-2 relative"
+      >
+        <!-- logo -->
+        <a href="#">
+          <img
+            src="img/logo.png"
+            alt="logo"
+            class="w-[115px] sm:w-[175px] object-contain"
+          />
+        </a>
+
+        <!-- navigation -->
+        <ul
+          class="lg:flex hidden lg:items-center lg:text-lg font-medium lg:gap-14"
+        >
+          <li
+            class="hover:text-color-nav transition-all ease-in-out duration-300 after:block relative after:absolute after:w-0 hover:after:w-full after:h-0.5 after:bg-orange-400 after:left-0 after:bottom-0 after:transition-all after:ease-in-out after:duration-300 item-li quanghai-active-nav"
+          >
+            <a href="#">Ưu đãi</a>
+          </li>
+          <li class="quanghai-menu-nav item-li">
+            <a href="#">Dịch vụ</a>
+          </li>
+          <li class="quanghai-menu-nav item-li">
+            <a href="#">Giới thiệu</a>
+          </li>
+          <li class="quanghai-menu-nav item-li">
+            <a href="#">Đội ngũ bác sĩ</a>
+          </li>
+          <li class="quanghai-menu-nav item-li">
+            <a href="#">Bảng giá</a>
+          </li>
+          <li class="quanghai-menu-nav item-li">
+            <a href="#">Thư viện</a>
+          </li>
+          <li class="quanghai-menu-nav item-li">
+            <a href="#">Liên hệ</a>
+          </li>
+        </ul>
+
+        <!-- contact -->
+        <div>
+          <a
+            href="tel:0968107500"
+            class="flex items-center sm:gap-2 gap-1 bg-gradient-to-r from-gradient-1 to-gradient-2 py-1 px-3 sm:py-2 sm:px-[20.8px] rounded-[40px] hover:bg-gradient-to-r hover:from-gradient-2 hover:to-gradient-1 hover:transition-all"
+            style="box-shadow: 0px 4px 20px 0px rgba(212, 166, 0, 0.19)"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18.965 16.61L17.792 15.437C17.206 14.851 16.256 14.851 15.671 15.437L14.749 16.359C14.543 16.565 14.231 16.634 13.965 16.517C12.629 15.932 11.309 15.045 10.132 13.868C8.95999 12.696 8.07599 11.382 7.48999 10.051C7.36799 9.77597 7.43899 9.45297 7.65199 9.23997L8.47799 8.41397C9.14899 7.74297 9.14899 6.79397 8.56299 6.20797L7.38999 5.03497C6.60899 4.25397 5.34299 4.25397 4.56199 5.03497L3.90999 5.68597C3.16899 6.42697 2.85999 7.49597 3.05999 8.55597C3.55399 11.169 5.07199 14.03 7.52099 16.479C9.96999 18.928 12.831 20.446 15.444 20.94C16.504 21.14 17.573 20.831 18.314 20.09L18.965 19.439C19.746 18.658 19.746 17.392 18.965 16.61Z"
+                fill="white"
+                stroke="white"
+                stroke-width="0.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13 6.99109C14.031 6.97709 15.067 7.35909 15.854 8.14609"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M18.682 5.31787C17.113 3.74887 15.056 2.96387 13 2.96387"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17.009 11C17.023 9.969 16.641 8.933 15.854 8.146"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M18.682 5.31787C20.251 6.88687 21.036 8.94387 21.036 10.9999"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span class="text-xs sm:text-sm font-semibold text-white"
+              >Hotline: 1900 1806</span
+            >
+          </a>
+        </div>
+
+        <!-- icon click show dropdown mobile,laptop -->
+        <div class="lg:hidden" id="btn-show-navbar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+
+        <!-- navbar trên mobile -->
+        <div
+          class="hidden z-[99]"
+          id="modal-nav-mobile"
+          aria-labelledby="slide-over-title"
+          role="dialog"
+          aria-modal="true"
+        >
+          <div
+            class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+          ></div>
+
+          <div class="fixed inset-0 overflow-hidden">
+            <div class="absolute inset-0 overflow-hidden">
+              <div
+                class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full md:pl-10 pl-0"
+              >
+                <div
+                  class="pointer-events-auto relative w-screen max-w-md"
+                  id="content-modal-2"
+                >
+                  <div
+                    class="absolute right-0 top-0 -ml-8 flex pr-2 pt-4 sm:-ml-10 sm:pr-4"
+                  >
+                    <button
+                      type="button"
+                      id="btn-close"
+                      class="relative rounded-md text-red-600 bg-red-200 font-semibold focus:outline-none focus:ring-2 focus:ring-red-600"
+                    >
+                      <span class="absolute -inset-2.5"></span>
+                      <span class="sr-only">Close panel</span>
+                      <svg
+                        class="h-8 w-8"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div
+                    class="flex h-full overflow-y-scroll bg-white py-6 shadow-xl"
+                    id="content-modal"
+                  >
+                    <ul
+                      class="flex flex-col items-center text-xl gap-3 font-medium w-full px-6 py-9"
+                    >
+                      <li
+                        class="item-li-mobile quanghai-active-nav-mobile w-full py-2 px-3 text-center"
+                      >
+                        <a href="#">Ưu đãi</a>
+                      </li>
+                      <li class="item-li-mobile w-full py-2 px-3 text-center">
+                        <a href="#">Dịch vụ</a>
+                      </li>
+                      <li class="item-li-mobile w-full py-2 px-3 text-center">
+                        <a href="#">Giới thiệu</a>
+                      </li>
+                      <li class="item-li-mobile w-full py-2 px-3 text-center">
+                        <a href="#">Đội ngũ bác sĩ</a>
+                      </li>
+                      <li class="item-li-mobile w-full py-2 px-3 text-center">
+                        <a href="#">Bảng giá</a>
+                      </li>
+                      <li class="item-li-mobile w-full py-2 px-3 text-center">
+                        <a href="#">Thư viện</a>
+                      </li>
+                      <li class="item-li-mobile w-full py-2 px-3 text-center">
+                        <a href="#">Liên hệ</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- main -->
+      <main>
+        <!-- banner -->
+        <div
+          class="bg-[url('img/banner2.png')] w-full lg:pt-[500px] md:pt-[250px] pt-[150px] bg-contain bg-no-repeat relative z-[40]"
+          style="background-size: 100%"
+        ></div>
+
+        <!-- slider -->
+        <div
+          class="lg:flex lg:items-center lg:ml-[200px] md:mt-10 mt-2 block relative z-30"
+        >
+          <!-- content slider -->
+          <div class="lg:max-w-[448px] lg:text-left text-center lg:px-0 px-2">
+            <h1 class="text-3xl font-medium mb-1">Chương trình ưu đãi:</h1>
+            <p class="text-base text-secondary-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit lis
+              iaculis ac felis porta. Vulputate tellus sapien pat sit ipsum
+              molestie pharetran da volutpat semper.
+            </p>
+
+            <div
+              class="flex items-center gap-3 mt-5 lg:justify-start justify-center lg:pb-0 pb-[18px] relative z-30"
+            >
+              <div
+                class="bg-gradient-to-r from-gradient-1 to-gradient-2 w-10 h-10 flex items-center justify-center rounded-[100px] hover:bg-gradient-to-r hover:from-gradient-2 hover:to-gradient-1 cursor-pointer transition-all abc_prev"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="16"
+                  viewBox="0 0 10 16"
+                  fill="none"
+                >
+                  <path
+                    d="M8.5 15L1.5 8L8.5 1"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="bg-gradient-to-r from-gradient-1 to-gradient-2 w-10 h-10 flex items-center justify-center rounded-[100px] hover:bg-gradient-to-r hover:from-gradient-2 hover:to-gradient-1 cursor-pointer transition-all abc_next"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="16"
+                  viewBox="0 0 10 16"
+                  fill="none"
+                >
+                  <path
+                    d="M1.5 15L8.5 8L1.5 1"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- slider -->
+          <div class="flex-1">
+            <!-- Swiper -->
+            <div class="swiper SaleSwiper">
+              <div class="swiper-wrapper max-w-[600px]">
+                <div
+                  class="swiper-slide block cursor-pointer quanghai-active-slider slider-q-hai"
+                >
+                  <div
+                    class="bg-[url('/img/baby.png')] w-[280px] pt-[200px] bg-cover bg-no-repeat"
+                  ></div>
+                  <div
+                    class="text-center max-w-[280px] py-4 relative top-[-32px] bg-white quanghai-item"
+                    style="
+                      border-radius: 40px 40px 40px 0px;
+                      box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.06);
+                    "
+                  >
+                    <h1
+                      class="font-Arima text-3xl text-[#14b5bc] mb-1 quanghai-text"
+                    >
+                      Ưu đãi 50%
+                    </h1>
+                    <h2 class="text-xl font-medium quanghai-text-2">
+                      Gói khám thai tổng quát
+                    </h2>
+                    <p class="text-sm text-secondary-text quanghai-text-3">
+                      Lorem ipsum dolor sit amet tarancebe consectetur
+                      adipiscing elit turpis.
+                    </p>
+                    <a
+                      href="tel:0968107500"
+                      class="text-[#f49a40] px-[43px] py-[9px] inline-block mt-2 quanghai-btn"
+                      style="
+                        border-radius: 100px;
+                        border: 1px solid var(--dd-button, #ffb469);
+                      "
+                    >
+                      Đăng ký nhận ưu đãi
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide block cursor-pointer slider-q-hai">
+                  <div
+                    class="bg-[url('/img/baby.png')] w-[280px] pt-[200px] bg-cover bg-no-repeat"
+                  ></div>
+                  <div
+                    class="text-center max-w-[280px] py-4 relative top-[-32px] bg-white quanghai-item"
+                    style="
+                      border-radius: 40px 40px 40px 0px;
+                      box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.06);
+                    "
+                  >
+                    <h1
+                      class="font-Arima text-3xl text-[#14b5bc] mb-1 quanghai-text"
+                    >
+                      Ưu đãi 50%
+                    </h1>
+                    <h2 class="text-xl font-medium quanghai-text-2">
+                      Gói khám thai tổng quát
+                    </h2>
+                    <p class="text-sm text-secondary-text quanghai-text-3">
+                      Lorem ipsum dolor sit amet tarancebe consectetur
+                      adipiscing elit turpis.
+                    </p>
+                    <a
+                      href="tel:0968107500"
+                      class="text-[#f49a40] px-[43px] py-[9px] inline-block mt-2 quanghai-btn"
+                      style="
+                        border-radius: 100px;
+                        border: 1px solid var(--dd-button, #ffb469);
+                      "
+                    >
+                      Đăng ký nhận ưu đãi
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide block cursor-pointer slider-q-hai">
+                  <div
+                    class="bg-[url('/img/baby.png')] w-[280px] pt-[200px] bg-cover bg-no-repeat"
+                  ></div>
+                  <div
+                    class="text-center max-w-[280px] py-4 relative top-[-32px] bg-white quanghai-item"
+                    style="
+                      border-radius: 40px 40px 40px 0px;
+                      box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.06);
+                    "
+                  >
+                    <h1
+                      class="font-Arima text-3xl text-[#14b5bc] mb-1 quanghai-text"
+                    >
+                      Ưu đãi 50%
+                    </h1>
+                    <h2 class="text-xl font-medium quanghai-text-2">
+                      Gói khám thai tổng quát
+                    </h2>
+                    <p class="text-sm text-secondary-text quanghai-text-3">
+                      Lorem ipsum dolor sit amet tarancebe consectetur
+                      adipiscing elit turpis.
+                    </p>
+                    <a
+                      href="tel:0968107500"
+                      class="text-[#f49a40] px-[43px] py-[9px] inline-block mt-2 quanghai-btn"
+                      style="
+                        border-radius: 100px;
+                        border: 1px solid var(--dd-button, #ffb469);
+                      "
+                    >
+                      Đăng ký nhận ưu đãi
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide block cursor-pointer slider-q-hai">
+                  <div
+                    class="bg-[url('/img/baby.png')] w-[280px] pt-[200px] bg-cover bg-no-repeat"
+                  ></div>
+                  <div
+                    class="text-center max-w-[280px] py-4 relative top-[-32px] bg-white quanghai-item"
+                    style="
+                      border-radius: 40px 40px 40px 0px;
+                      box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.06);
+                    "
+                  >
+                    <h1
+                      class="font-Arima text-3xl text-[#14b5bc] mb-1 quanghai-text"
+                    >
+                      Ưu đãi 50%
+                    </h1>
+                    <h2 class="text-xl font-medium quanghai-text-2">
+                      Gói khám thai tổng quát
+                    </h2>
+                    <p class="text-sm text-secondary-text quanghai-text-3">
+                      Lorem ipsum dolor sit amet tarancebe consectetur
+                      adipiscing elit turpis.
+                    </p>
+                    <a
+                      href="tel:0968107500"
+                      class="text-[#f49a40] px-[43px] py-[9px] inline-block mt-2 quanghai-btn"
+                      style="
+                        border-radius: 100px;
+                        border: 1px solid var(--dd-button, #ffb469);
+                      "
+                    >
+                      Đăng ký nhận ưu đãi
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide block cursor-pointer slider-q-hai">
+                  <div
+                    class="bg-[url('/img/baby.png')] w-[280px] pt-[200px] bg-cover bg-no-repeat"
+                  ></div>
+                  <div
+                    class="text-center max-w-[280px] py-4 relative top-[-32px] bg-white quanghai-item"
+                    style="
+                      border-radius: 40px 40px 40px 0px;
+                      box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.06);
+                    "
+                  >
+                    <h1
+                      class="font-Arima text-3xl text-[#14b5bc] mb-1 quanghai-text"
+                    >
+                      Ưu đãi 50%
+                    </h1>
+                    <h2 class="text-xl font-medium quanghai-text-2">
+                      Gói khám thai tổng quát
+                    </h2>
+                    <p class="text-sm text-secondary-text quanghai-text-3">
+                      Lorem ipsum dolor sit amet tarancebe consectetur
+                      adipiscing elit turpis.
+                    </p>
+                    <a
+                      href="tel:0968107500"
+                      class="text-[#f49a40] px-[43px] py-[9px] inline-block mt-2 quanghai-btn"
+                      style="
+                        border-radius: 100px;
+                        border: 1px solid var(--dd-button, #ffb469);
+                      "
+                    >
+                      Đăng ký nhận ưu đãi
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide block cursor-pointer slider-q-hai">
+                  <div
+                    class="bg-[url('/img/baby.png')] w-[280px] pt-[200px] bg-cover bg-no-repeat"
+                  ></div>
+                  <div
+                    class="text-center max-w-[280px] py-4 relative top-[-32px] bg-white quanghai-item"
+                    style="
+                      border-radius: 40px 40px 40px 0px;
+                      box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.06);
+                    "
+                  >
+                    <h1
+                      class="font-Arima text-3xl text-[#14b5bc] mb-1 quanghai-text"
+                    >
+                      Ưu đãi 50%
+                    </h1>
+                    <h2 class="text-xl font-medium quanghai-text-2">
+                      Gói khám thai tổng quát
+                    </h2>
+                    <p class="text-sm text-secondary-text quanghai-text-3">
+                      Lorem ipsum dolor sit amet tarancebe consectetur
+                      adipiscing elit turpis.
+                    </p>
+                    <a
+                      href="tel:0968107500"
+                      class="text-[#f49a40] px-[43px] py-[9px] inline-block mt-2 quanghai-btn"
+                      style="
+                        border-radius: 100px;
+                        border: 1px solid var(--dd-button, #ffb469);
+                      "
+                    >
+                      Đăng ký nhận ưu đãi
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide block cursor-pointer slider-q-hai">
+                  <div
+                    class="bg-[url('/img/baby.png')] w-[280px] pt-[200px] bg-cover bg-no-repeat"
+                  ></div>
+                  <div
+                    class="text-center max-w-[280px] py-4 relative top-[-32px] bg-white quanghai-item"
+                    style="
+                      border-radius: 40px 40px 40px 0px;
+                      box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.06);
+                    "
+                  >
+                    <h1
+                      class="font-Arima text-3xl text-[#14b5bc] mb-1 quanghai-text"
+                    >
+                      Ưu đãi 50%
+                    </h1>
+                    <h2 class="text-xl font-medium quanghai-text-2">
+                      Gói khám thai tổng quát
+                    </h2>
+                    <p class="text-sm text-secondary-text quanghai-text-3">
+                      Lorem ipsum dolor sit amet tarancebe consectetur
+                      adipiscing elit turpis.
+                    </p>
+                    <a
+                      href="tel:0968107500"
+                      class="text-[#f49a40] px-[43px] py-[9px] inline-block mt-2 quanghai-btn"
+                      style="
+                        border-radius: 100px;
+                        border: 1px solid var(--dd-button, #ffb469);
+                      "
+                    >
+                      Đăng ký nhận ưu đãi
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide block cursor-pointer slider-q-hai">
+                  <div
+                    class="bg-[url('/img/baby.png')] w-[280px] pt-[200px] bg-cover bg-no-repeat"
+                  ></div>
+                  <div
+                    class="text-center max-w-[280px] py-4 relative top-[-32px] bg-white quanghai-item"
+                    style="
+                      border-radius: 40px 40px 40px 0px;
+                      box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.06);
+                    "
+                  >
+                    <h1
+                      class="font-Arima text-3xl text-[#14b5bc] mb-1 quanghai-text"
+                    >
+                      Ưu đãi 50%
+                    </h1>
+                    <h2 class="text-xl font-medium quanghai-text-2">
+                      Gói khám thai tổng quát
+                    </h2>
+                    <p class="text-sm text-secondary-text quanghai-text-3">
+                      Lorem ipsum dolor sit amet tarancebe consectetur
+                      adipiscing elit turpis.
+                    </p>
+                    <a
+                      href="tel:0968107500"
+                      class="text-[#f49a40] px-[43px] py-[9px] inline-block mt-2 quanghai-btn"
+                      style="
+                        border-radius: 100px;
+                        border: 1px solid var(--dd-button, #ffb469);
+                      "
+                    >
+                      Đăng ký nhận ưu đãi
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide block cursor-pointer slider-q-hai">
+                  <div
+                    class="bg-[url('/img/baby.png')] w-[280px] pt-[200px] bg-cover bg-no-repeat"
+                  ></div>
+                  <div
+                    class="text-center max-w-[280px] py-4 relative top-[-32px] bg-white quanghai-item"
+                    style="
+                      border-radius: 40px 40px 40px 0px;
+                      box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.06);
+                    "
+                  >
+                    <h1
+                      class="font-Arima text-3xl text-[#14b5bc] mb-1 quanghai-text"
+                    >
+                      Ưu đãi 50%
+                    </h1>
+                    <h2 class="text-xl font-medium quanghai-text-2">
+                      Gói khám thai tổng quát
+                    </h2>
+                    <p class="text-sm text-secondary-text quanghai-text-3">
+                      Lorem ipsum dolor sit amet tarancebe consectetur
+                      adipiscing elit turpis.
+                    </p>
+                    <a
+                      href="tel:0968107500"
+                      class="text-[#f49a40] px-[43px] py-[9px] inline-block mt-2 quanghai-btn"
+                      style="
+                        border-radius: 100px;
+                        border: 1px solid var(--dd-button, #ffb469);
+                      "
+                    >
+                      Đăng ký nhận ưu đãi
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide block cursor-pointer slider-q-hai">
+                  <div
+                    class="bg-[url('/img/baby.png')] w-[280px] pt-[200px] bg-cover bg-no-repeat"
+                  ></div>
+                  <div
+                    class="text-center max-w-[280px] py-4 relative top-[-32px] bg-white quanghai-item"
+                    style="
+                      border-radius: 40px 40px 40px 0px;
+                      box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.06);
+                    "
+                  >
+                    <h1
+                      class="font-Arima text-3xl text-[#14b5bc] mb-1 quanghai-text"
+                    >
+                      Ưu đãi 50%
+                    </h1>
+                    <h2 class="text-xl font-medium quanghai-text-2">
+                      Gói khám thai tổng quát
+                    </h2>
+                    <p class="text-sm text-secondary-text quanghai-text-3">
+                      Lorem ipsum dolor sit amet tarancebe consectetur
+                      adipiscing elit turpis.
+                    </p>
+                    <a
+                      href="tel:0968107500"
+                      class="text-[#f49a40] px-[43px] py-[9px] inline-block mt-2 quanghai-btn"
+                      style="
+                        border-radius: 100px;
+                        border: 1px solid var(--dd-button, #ffb469);
+                      "
+                    >
+                      Đăng ký nhận ưu đãi
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide block cursor-pointer slider-q-hai">
+                  <div
+                    class="bg-[url('/img/baby.png')] w-[280px] pt-[200px] bg-cover bg-no-repeat"
+                  ></div>
+                  <div
+                    class="text-center max-w-[280px] py-4 relative top-[-32px] bg-white quanghai-item"
+                    style="
+                      border-radius: 40px 40px 40px 0px;
+                      box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.06);
+                    "
+                  >
+                    <h1
+                      class="font-Arima text-3xl text-[#14b5bc] mb-1 quanghai-text"
+                    >
+                      Ưu đãi 50%
+                    </h1>
+                    <h2 class="text-xl font-medium quanghai-text-2">
+                      Gói khám thai tổng quát
+                    </h2>
+                    <p class="text-sm text-secondary-text quanghai-text-3">
+                      Lorem ipsum dolor sit amet tarancebe consectetur
+                      adipiscing elit turpis.
+                    </p>
+                    <a
+                      href="tel:0968107500"
+                      class="text-[#f49a40] px-[43px] py-[9px] inline-block mt-2 quanghai-btn"
+                      style="
+                        border-radius: 100px;
+                        border: 1px solid var(--dd-button, #ffb469);
+                      "
+                    >
+                      Đăng ký nhận ưu đãi
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <!-- hình tròn đường viền -->
+          <img
+            src="img/hinhtron.png"
+            alt="icon"
+            class="md:w-[472px] md:h-[472px] w-[272px] h-[272px] md:top-[-51%] md:left-[7%] top-[-26%] left-[18%] object-contain absolute"
+          />
+        </div>
+
+        <!-- content 1 -->
+        <div class="flex items-center lg:ml-[200px] mt-6 lg:gap-5 relative">
+          <div class="group cursor-pointer relative z-10">
+            <img
+              src="img/quhai2.png"
+              class="lg:w-[520px] lg:h-[600px] object-contain group-hover:scale-[1.05] group-hover:transition-all"
+            />
+          </div>
+          <div class="lg:max-w-[688px]">
+            <h1 class="text-3xl font-medium mb-3">Dịch vụ thai sản trọn gói</h1>
+            <p class="text-base font-normal text-secondary-text mb-2">
+              Mang thai và sinh nở là một hành trình vô cùng kỳ diệu nhưng cũng
+              lắm mệt mỏi, áp lực, thậm chí là nguy hiểm. Thấu hiểu nỗi niềm đó,
+              dịch vụ thai sản trọn gói Phương Đông nhằm mang tới trải nghiệm
+              nhẹ nhàng, an tâm cho người mẹ trong suốt thai kỳ, ngày vượt cạn
+              đến sau sinh và sự chăm sóc toàn diện với em bé ngay từ giây phút
+              đầu tiên chào đời.
+            </p>
+            <ul>
+              <li>
+                <div>
+                  <div class="flex items-center gap-1 mb-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                    >
+                      <circle
+                        cx="6"
+                        cy="6"
+                        r="6"
+                        fill="url(#paint0_linear_1_13357)"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1_13357"
+                          x1="-9.39097e-08"
+                          y1="6.02429"
+                          x2="12"
+                          y2="6.02429"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#73D090" />
+                          <stop offset="0.0001" stop-color="#C4EACE" />
+                          <stop offset="1" stop-color="#53CAFB" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <p class="text-base font-medium">
+                      Đội ngũ bác sĩ sản khoa giàu kinh nghiệm
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-1 mb-2 md:ml-6">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                    >
+                      <circle
+                        cx="6"
+                        cy="6"
+                        r="6"
+                        fill="url(#paint0_linear_1_13357)"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1_13357"
+                          x1="-9.39097e-08"
+                          y1="6.02429"
+                          x2="12"
+                          y2="6.02429"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#73D090" />
+                          <stop offset="0.0001" stop-color="#C4EACE" />
+                          <stop offset="1" stop-color="#53CAFB" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <p class="text-base font-medium">
+                      Chăm sóc mẹ và bé toàn diện trước trong và sau sinh
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="flex items-center gap-1 mb-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                    >
+                      <circle
+                        cx="6"
+                        cy="6"
+                        r="6"
+                        fill="url(#paint0_linear_1_13357)"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1_13357"
+                          x1="-9.39097e-08"
+                          y1="6.02429"
+                          x2="12"
+                          y2="6.02429"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#73D090" />
+                          <stop offset="0.0001" stop-color="#C4EACE" />
+                          <stop offset="1" stop-color="#53CAFB" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <p class="text-base font-medium">
+                      Không gian đẳng cấp với trang thiết bị y tế hiện đại
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-1 mb-2 md:ml-6">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                    >
+                      <circle
+                        cx="6"
+                        cy="6"
+                        r="6"
+                        fill="url(#paint0_linear_1_13357)"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1_13357"
+                          x1="-9.39097e-08"
+                          y1="6.02429"
+                          x2="12"
+                          y2="6.02429"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#73D090" />
+                          <stop offset="0.0001" stop-color="#C4EACE" />
+                          <stop offset="1" stop-color="#53CAFB" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <p class="text-base font-medium">
+                      Đi sinh sung sướng như đi nghỉ dưỡng
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="flex items-center gap-1 mb-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                    >
+                      <circle
+                        cx="6"
+                        cy="6"
+                        r="6"
+                        fill="url(#paint0_linear_1_13357)"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1_13357"
+                          x1="-9.39097e-08"
+                          y1="6.02429"
+                          x2="12"
+                          y2="6.02429"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#73D090" />
+                          <stop offset="0.0001" stop-color="#C4EACE" />
+                          <stop offset="1" stop-color="#53CAFB" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <p class="text-base font-medium">
+                      Con yêu chào đời với những điều kiện tốt nhất
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-1 mb-2 md:ml-6">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                    >
+                      <circle
+                        cx="6"
+                        cy="6"
+                        r="6"
+                        fill="url(#paint0_linear_1_13357)"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1_13357"
+                          x1="-9.39097e-08"
+                          y1="6.02429"
+                          x2="12"
+                          y2="6.02429"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#73D090" />
+                          <stop offset="0.0001" stop-color="#C4EACE" />
+                          <stop offset="1" stop-color="#53CAFB" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <p class="text-base font-medium">
+                      Thanh toán đồng thời bảo hiểm Y tế, bảo hiểm bảo lãnh
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="flex items-center gap-1 mb-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                    >
+                      <circle
+                        cx="6"
+                        cy="6"
+                        r="6"
+                        fill="url(#paint0_linear_1_13357)"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1_13357"
+                          x1="-9.39097e-08"
+                          y1="6.02429"
+                          x2="12"
+                          y2="6.02429"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#73D090" />
+                          <stop offset="0.0001" stop-color="#C4EACE" />
+                          <stop offset="1" stop-color="#53CAFB" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <p class="text-base font-medium">
+                      Bảng giá các gói sinh tại Bệnh viện Phương Đông
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a
+              href="tel:0968107500"
+              class="text-base font-medium py-[11px] px-[32.7px] bg-gradient-to-r from-gradient-1 to-gradient-2 hover:bg-gradient-to-r hover:from-gradient-2 hover:to-gradient-1 transition-all text-white rounded-[100px] mt-3 inline-block"
+              style="box-shadow: 0px 7px 20px 0px rgba(212, 166, 0, 0.19)"
+              >Liên hệ</a
+            >
+          </div>
+
+          <!-- vòng tròn content 1 -->
+          <img
+            src="img/hinhtron.png"
+            alt="icon"
+            class="md:w-[472px] md:h-[472px] w-[272px] h-[272px] md:top-[43%] md:left-[-21%] top-[-26%] left-[18%] object-contain absolute"
+          />
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <h1>Quang hải</h1>
+        <h1>Quang hải</h1>
+        <h1>Quang hải</h1>
+        <h1>Quang hải</h1>
+        <h1>Quang hải</h1>
+        <h1>Quang hải</h1>
+        <h1>Quang hải</h1>
+        <h1>Quang hải</h1>
+      </footer>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
