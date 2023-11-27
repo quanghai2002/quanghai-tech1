@@ -353,7 +353,7 @@
                   class="swiper-slide block cursor-pointer quanghai-active-slider slider-q-hai"
                 >
                   <div
-                    class="bg-[url('./img/baby.png')] w-[280px] pt-[200px] bg-cover bg-no-repeat"
+                    class="bg-[url('img/baby.png')] w-[280px] pt-[200px] bg-cover bg-no-repeat"
                   ></div>
                   <div
                     class="text-center max-w-[280px] py-4 relative top-[-32px] bg-white quanghai-item"
@@ -750,14 +750,21 @@
         </div>
 
         <!-- content 1 -->
-        <div class="flex items-center lg:ml-[200px] mt-6 lg:gap-5 relative">
-          <div class="group cursor-pointer relative z-10">
+        <div
+          class="lg:flex lg:items-center lg:ml-[200px] mt-6 lg:gap-5 relative block"
+        >
+          <div
+            class="group cursor-pointer relative z-10 lg:block flex justify-center"
+          >
             <img
               src="img/quhai2.png"
               class="lg:w-[520px] lg:h-[600px] object-contain group-hover:scale-[1.05] group-hover:transition-all"
             />
           </div>
-          <div class="lg:max-w-[688px]">
+
+          <div
+            class="lg:max-w-[688px] lg:text-left text-center mt-5 lg:mt-0 px-[13px] lg:px-0"
+          >
             <h1 class="text-3xl font-medium mb-3">Dịch vụ thai sản trọn gói</h1>
             <p class="text-base font-normal text-secondary-text mb-2">
               Mang thai và sinh nở là một hành trình vô cùng kỳ diệu nhưng cũng
@@ -803,7 +810,7 @@
                       Đội ngũ bác sĩ sản khoa giàu kinh nghiệm
                     </p>
                   </div>
-                  <div class="flex items-center gap-1 mb-2 md:ml-6">
+                  <div class="flex items-center gap-1 mb-2 lg:ml-6">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="12"
@@ -873,7 +880,7 @@
                       Không gian đẳng cấp với trang thiết bị y tế hiện đại
                     </p>
                   </div>
-                  <div class="flex items-center gap-1 mb-2 md:ml-6">
+                  <div class="flex items-center gap-1 mb-2 lg:ml-6">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="12"
@@ -943,7 +950,7 @@
                       Con yêu chào đời với những điều kiện tốt nhất
                     </p>
                   </div>
-                  <div class="flex items-center gap-1 mb-2 md:ml-6">
+                  <div class="flex items-center gap-1 mb-2 lg:ml-6">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="12"
@@ -1019,7 +1026,7 @@
 
             <a
               href="tel:0968107500"
-              class="text-base font-medium py-[11px] px-[32.7px] bg-gradient-to-r from-gradient-1 to-gradient-2 hover:bg-gradient-to-r hover:from-gradient-2 hover:to-gradient-1 transition-all text-white rounded-[100px] mt-3 inline-block"
+              class="text-base font-medium py-[11px] px-[32.7px] bg-gradient-to-r from-gradient-1 to-gradient-2 hover:bg-gradient-to-r hover:from-gradient-2 hover:to-gradient-1 transition-all text-white rounded-[100px] mt-3 md:inline-block block"
               style="box-shadow: 0px 7px 20px 0px rgba(212, 166, 0, 0.19)"
               >Liên hệ</a
             >
@@ -1030,6 +1037,601 @@
             src="img/hinhtron.png"
             alt="icon"
             class="md:w-[472px] md:h-[472px] w-[272px] h-[272px] md:top-[43%] md:left-[-21%] top-[-26%] left-[18%] object-contain absolute"
+          />
+        </div>
+
+        <!-- wrap table bảng giá dịch vụ -->
+        <div
+          class="relative z-30 pb-20"
+          style="
+            background: var(
+              --dd-100,
+              linear-gradient(90deg, #50c577 0%, #c4eace 0.01%, #b5e8fd 100%)
+            );
+          "
+        >
+          <div
+            class="lg:w-[80%] md:w-[93%] w-[100%] mx-auto pt-20 overflow-hidden lg:mt-0 mt-9"
+            style="border-radius: 0px 0px 24px 24px"
+          >
+            <div class="bg-white lg:py-8 lg:px-6 p-2 relative z-30">
+              <!-- header thông tin bảng giá dịch vụ -->
+              <div class="flex items-center md:flex-row flex-col">
+                <div>
+                  <img src="img/logo.png" alt="logo" />
+                </div>
+                <div class="flex-1 text-center">
+                  <h1 class="text-2xl font-medium mb-1">
+                    Bảng giá các dịch vụ khám và chữa bệnh:
+                  </h1>
+                  <p class="text-sm font-normal text-secondary-text">
+                    Ghi chú: Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit lis iaculis ac felis
+                  </p>
+                </div>
+              </div>
+
+              <!-- table bảng giá dịch vụ -->
+              <div class="mt-2">
+                <table class="block w-full rounded-[8px] overflow-hidden">
+                  <thead
+                    class="block w-full border-[1px]"
+                    style="
+                      background-image: linear-gradient(
+                        to right,
+                        #50c579 0%,
+                        #3ec2bb 50%,
+                        #2ebefa 100%
+                      );
+                    "
+                  >
+                    <tr class="block w-full">
+                      <th
+                        class="md:w-[56px] md:min-w-[56px] w-[46px] min-w-[46px] text-base font-medium border-r-[1px] text-white"
+                      >
+                        STT
+                      </th>
+                      <th
+                        class="lg:w-[540px] lg:min-w-[540px] md:min-w-[300px] min-w-[116px] text-base font-medium border-r-[1px] text-white"
+                      >
+                        TÊN DỊCH VỤ
+                      </th>
+                      <th
+                        class="lg:w-[566px] lg:min-w-[566px] text-base font-medium text-white"
+                      >
+                        <h1 class="py-2 border-b-[1px]">
+                          GIÁ DỊCH VỤ DÀNH CHO KHÁCH HÀNG CÓ QUỐC TỊCH
+                        </h1>
+                        <div class="flex items-center">
+                          <h2 class="flex-1 py-2 border-r-[1px]">Việt Nam</h2>
+                          <h2 class="flex-1 py-2">Nước ngoài</h2>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    class="block w-full border-r-[1px] border-l-[1px] border-b-[1px] max-h-[350px] overflow-y-auto overflow-x-hidden"
+                  >
+                    <tr
+                      class="block h-full p-0 cursor-pointer hover:bg-[#bde9e3] transition-all border-b-[1px]"
+                    >
+                      <td
+                        class="md:w-[56px] md:min-w-[56px] w-[46px] min-w-[46px] p-0 text-center border-r-[1px] text-base font-normal text-secondary-text"
+                      >
+                        1
+                      </td>
+                      <td
+                        class="lg:w-[540px] lg:min-w-[540px] md:min-w-[300px] md:w-[301px] min-w-[115px] w-[115px] border-r-[1px] lg:pl-4 px-1 text-base font-normal text-secondary-text lg:text-left text-center"
+                      >
+                        Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+                      </td>
+                      <td
+                        class="lg:w-[566px] lg:min-w-[566px] w-[304px] md:min-w-[336px] min-w-[221px] p-0"
+                      >
+                        <div class="flex items-center">
+                          <p
+                            class="flex-1 py-2 border-r-[1px] text-center text-base font-normal text-secondary-text"
+                          >
+                            200,000/giờ
+                          </p>
+                          <p
+                            class="flex-1 text-center text-base text-secondary-text"
+                          >
+                            400,000/giờ
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr
+                      class="block h-full p-0 cursor-pointer hover:bg-[#bde9e3] transition-all border-b-[1px]"
+                    >
+                      <td
+                        class="md:w-[56px] md:min-w-[56px] w-[46px] min-w-[46px] p-0 text-center border-r-[1px] text-base font-normal text-secondary-text"
+                      >
+                        2
+                      </td>
+                      <td
+                        class="lg:w-[540px] lg:min-w-[540px] md:min-w-[300px] md:w-[301px] min-w-[115px] w-[115px] border-r-[1px] lg:pl-4 px-1 text-base font-normal text-secondary-text lg:text-left text-center"
+                      >
+                        Cắt chỉ
+                      </td>
+                      <td
+                        class="lg:w-[566px] lg:min-w-[566px] w-[304px] md:min-w-[336px] min-w-[221px] p-0"
+                      >
+                        <div class="flex items-center">
+                          <p
+                            class="flex-1 py-2 border-r-[1px] text-center text-base font-normal text-secondary-text"
+                          >
+                            200,000/giờ
+                          </p>
+                          <p
+                            class="flex-1 text-center text-base text-secondary-text"
+                          >
+                            400,000/giờ
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr
+                      class="block h-full p-0 cursor-pointer hover:bg-[#bde9e3] transition-all border-b-[1px]"
+                    >
+                      <td
+                        class="md:w-[56px] md:min-w-[56px] w-[46px] min-w-[46px] p-0 text-center border-r-[1px] text-base font-normal text-secondary-text"
+                      >
+                        3
+                      </td>
+                      <td
+                        class="lg:w-[540px] lg:min-w-[540px] md:min-w-[300px] md:w-[301px] min-w-[115px] w-[115px] border-r-[1px] lg:pl-4 px-1 text-base font-normal text-secondary-text lg:text-left text-center"
+                      >
+                        Phương tiện bảo hộ lấy mẫu
+                      </td>
+                      <td
+                        class="lg:w-[566px] lg:min-w-[566px] w-[304px] md:min-w-[336px] min-w-[221px] p-0"
+                      >
+                        <div class="flex items-center">
+                          <p
+                            class="flex-1 py-2 border-r-[1px] text-center text-base font-normal text-secondary-text"
+                          >
+                            200,000/giờ
+                          </p>
+                          <p
+                            class="flex-1 text-center text-base text-secondary-text"
+                          >
+                            400,000/giờ
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr
+                      class="block h-full p-0 cursor-pointer hover:bg-[#bde9e3] transition-all border-b-[1px]"
+                    >
+                      <td
+                        class="md:w-[56px] md:min-w-[56px] w-[46px] min-w-[46px] p-0 text-center border-r-[1px] text-base font-normal text-secondary-text"
+                      >
+                        4
+                      </td>
+                      <td
+                        class="lg:w-[540px] lg:min-w-[540px] md:min-w-[300px] md:w-[301px] min-w-[115px] w-[115px] border-r-[1px] lg:pl-4 px-1 text-base font-normal text-secondary-text lg:text-left text-center"
+                      >
+                        Tắm bé tại nhà
+                      </td>
+                      <td
+                        class="lg:w-[566px] lg:min-w-[566px] w-[304px] md:min-w-[336px] min-w-[221px] p-0"
+                      >
+                        <div class="flex items-center">
+                          <p
+                            class="flex-1 py-2 border-r-[1px] text-center text-base font-normal text-secondary-text"
+                          >
+                            200,000/giờ
+                          </p>
+                          <p
+                            class="flex-1 text-center text-base text-secondary-text"
+                          >
+                            400,000/giờ
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr
+                      class="block h-full p-0 cursor-pointer hover:bg-[#bde9e3] transition-all border-b-[1px]"
+                    >
+                      <td
+                        class="md:w-[56px] md:min-w-[56px] w-[46px] min-w-[46px] p-0 text-center border-r-[1px] text-base font-normal text-secondary-text"
+                      >
+                        5
+                      </td>
+                      <td
+                        class="lg:w-[540px] lg:min-w-[540px] md:min-w-[300px] md:w-[301px] min-w-[115px] w-[115px] border-r-[1px] lg:pl-4 px-1 text-base font-normal text-secondary-text lg:text-left text-center"
+                      >
+                        Dẫn lưu nước tiểu bàng quang
+                      </td>
+                      <td
+                        class="lg:w-[566px] lg:min-w-[566px] w-[304px] md:min-w-[336px] min-w-[221px] p-0"
+                      >
+                        <div class="flex items-center">
+                          <p
+                            class="flex-1 py-2 border-r-[1px] text-center text-base font-normal text-secondary-text"
+                          >
+                            200,000/giờ
+                          </p>
+                          <p
+                            class="flex-1 text-center text-base text-secondary-text"
+                          >
+                            400,000/giờ
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr
+                      class="block h-full p-0 cursor-pointer hover:bg-[#bde9e3] transition-all border-b-[1px]"
+                    >
+                      <td
+                        class="md:w-[56px] md:min-w-[56px] w-[46px] min-w-[46px] p-0 text-center border-r-[1px] text-base font-normal text-secondary-text"
+                      >
+                        6
+                      </td>
+                      <td
+                        class="lg:w-[540px] lg:min-w-[540px] md:min-w-[300px] md:w-[301px] min-w-[115px] w-[115px] border-r-[1px] lg:pl-4 px-1 text-base font-normal text-secondary-text lg:text-left text-center"
+                      >
+                        Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+                      </td>
+                      <td
+                        class="lg:w-[566px] lg:min-w-[566px] w-[304px] md:min-w-[336px] min-w-[221px] p-0"
+                      >
+                        <div class="flex items-center">
+                          <p
+                            class="flex-1 py-2 border-r-[1px] text-center text-base font-normal text-secondary-text"
+                          >
+                            200,000/giờ
+                          </p>
+                          <p
+                            class="flex-1 text-center text-base text-secondary-text"
+                          >
+                            400,000/giờ
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr
+                      class="block h-full p-0 cursor-pointer hover:bg-[#bde9e3] transition-all border-b-[1px]"
+                    >
+                      <td
+                        class="md:w-[56px] md:min-w-[56px] w-[46px] min-w-[46px] p-0 text-center border-r-[1px] text-base font-normal text-secondary-text"
+                      >
+                        7
+                      </td>
+                      <td
+                        class="lg:w-[540px] lg:min-w-[540px] md:min-w-[300px] md:w-[301px] min-w-[115px] w-[115px] border-r-[1px] lg:pl-4 px-1 text-base font-normal text-secondary-text lg:text-left text-center"
+                      >
+                        Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+                      </td>
+                      <td
+                        class="lg:w-[566px] lg:min-w-[566px] w-[304px] md:min-w-[336px] min-w-[221px] p-0"
+                      >
+                        <div class="flex items-center">
+                          <p
+                            class="flex-1 py-2 border-r-[1px] text-center text-base font-normal text-secondary-text"
+                          >
+                            200,000/giờ
+                          </p>
+                          <p
+                            class="flex-1 text-center text-base text-secondary-text"
+                          >
+                            400,000/giờ
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr
+                      class="block h-full p-0 cursor-pointer hover:bg-[#bde9e3] transition-all border-b-[1px]"
+                    >
+                      <td
+                        class="md:w-[56px] md:min-w-[56px] w-[46px] min-w-[46px] p-0 text-center border-r-[1px] text-base font-normal text-secondary-text"
+                      >
+                        8
+                      </td>
+                      <td
+                        class="lg:w-[540px] lg:min-w-[540px] md:min-w-[300px] md:w-[301px] min-w-[115px] w-[115px] border-r-[1px] lg:pl-4 px-1 text-base font-normal text-secondary-text lg:text-left text-center"
+                      >
+                        Xét nghiệm tại nhà
+                      </td>
+                      <td
+                        class="lg:w-[566px] lg:min-w-[566px] w-[304px] md:min-w-[336px] min-w-[221px] p-0"
+                      >
+                        <div class="flex items-center">
+                          <p
+                            class="flex-1 py-2 border-r-[1px] text-center text-base font-normal text-secondary-text"
+                          >
+                            200,000/giờ
+                          </p>
+                          <p
+                            class="flex-1 text-center text-base text-secondary-text"
+                          >
+                            400,000/giờ
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr
+                      class="block h-full p-0 cursor-pointer hover:bg-[#bde9e3] transition-all border-b-[1px]"
+                    >
+                      <td
+                        class="md:w-[56px] md:min-w-[56px] w-[46px] min-w-[46px] p-0 text-center border-r-[1px] text-base font-normal text-secondary-text"
+                      >
+                        9
+                      </td>
+                      <td
+                        class="lg:w-[540px] lg:min-w-[540px] md:min-w-[300px] md:w-[301px] min-w-[115px] w-[115px] border-r-[1px] lg:pl-4 px-1 text-base font-normal text-secondary-text lg:text-left text-center"
+                      >
+                        Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+                      </td>
+                      <td
+                        class="lg:w-[566px] lg:min-w-[566px] w-[304px] md:min-w-[336px] min-w-[221px] p-0"
+                      >
+                        <div class="flex items-center">
+                          <p
+                            class="flex-1 py-2 text-center text-base font-normal text-secondary-text"
+                          >
+                            Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr
+                      class="block h-full p-0 cursor-pointer hover:bg-[#bde9e3] transition-all border-b-[1px]"
+                    >
+                      <td
+                        class="md:w-[56px] md:min-w-[56px] w-[46px] min-w-[46px] p-0 text-center border-r-[1px] text-base font-normal text-secondary-text"
+                      >
+                        10
+                      </td>
+                      <td
+                        class="lg:w-[540px] lg:min-w-[540px] md:min-w-[300px] md:w-[301px] min-w-[115px] w-[115px] border-r-[1px] lg:pl-4 px-1 text-base font-normal text-secondary-text lg:text-left text-center"
+                      >
+                        Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+                      </td>
+                      <td
+                        class="lg:w-[566px] lg:min-w-[566px] w-[304px] md:min-w-[336px] min-w-[221px] p-0"
+                      >
+                        <div class="flex items-center">
+                          <p
+                            class="flex-1 py-2 border-r-[1px] text-center text-base font-normal text-secondary-text"
+                          >
+                            200,000/giờ
+                          </p>
+                          <p
+                            class="flex-1 text-center text-base text-secondary-text"
+                          >
+                            400,000/giờ
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr
+                      class="block h-full p-0 cursor-pointer hover:bg-[#bde9e3] transition-all border-b-[1px]"
+                    >
+                      <td
+                        class="md:w-[56px] md:min-w-[56px] w-[46px] min-w-[46px] p-0 text-center border-r-[1px] text-base font-normal text-secondary-text"
+                      >
+                        11
+                      </td>
+                      <td
+                        class="lg:w-[540px] lg:min-w-[540px] md:min-w-[300px] md:w-[301px] min-w-[115px] w-[115px] border-r-[1px] lg:pl-4 px-1 text-base font-normal text-secondary-text lg:text-left text-center"
+                      >
+                        Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+                      </td>
+                      <td
+                        class="lg:w-[566px] lg:min-w-[566px] w-[304px] md:min-w-[336px] min-w-[221px] p-0"
+                      >
+                        <div class="flex items-center">
+                          <p
+                            class="flex-1 py-2 border-r-[1px] text-center text-base font-normal text-secondary-text"
+                          >
+                            200,000/giờ
+                          </p>
+                          <p
+                            class="flex-1 text-center text-base text-secondary-text"
+                          >
+                            400,000/giờ
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr
+                      class="block h-full p-0 cursor-pointer hover:bg-[#bde9e3] transition-all border-b-[1px]"
+                    >
+                      <td
+                        class="md:w-[56px] md:min-w-[56px] w-[46px] min-w-[46px] p-0 text-center border-r-[1px] text-base font-normal text-secondary-text"
+                      >
+                        12
+                      </td>
+                      <td
+                        class="lg:w-[540px] lg:min-w-[540px] md:min-w-[300px] md:w-[301px] min-w-[115px] w-[115px] border-r-[1px] lg:pl-4 px-1 text-base font-normal text-secondary-text lg:text-left text-center"
+                      >
+                        Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+                      </td>
+                      <td
+                        class="lg:w-[566px] lg:min-w-[566px] w-[304px] md:min-w-[336px] min-w-[221px] p-0"
+                      >
+                        <div class="flex items-center">
+                          <p
+                            class="flex-1 py-2 border-r-[1px] text-center text-base font-normal text-secondary-text"
+                          >
+                            200,000/giờ
+                          </p>
+                          <p
+                            class="flex-1 text-center text-base text-secondary-text"
+                          >
+                            400,000/giờ
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr
+                      class="block h-full p-0 cursor-pointer hover:bg-[#bde9e3] transition-all border-b-[1px]"
+                    >
+                      <td
+                        class="md:w-[56px] md:min-w-[56px] w-[46px] min-w-[46px] p-0 text-center border-r-[1px] text-base font-normal text-secondary-text"
+                      >
+                        13
+                      </td>
+                      <td
+                        class="lg:w-[540px] lg:min-w-[540px] md:min-w-[300px] md:w-[301px] min-w-[115px] w-[115px] border-r-[1px] lg:pl-4 px-1 text-base font-normal text-secondary-text lg:text-left text-center"
+                      >
+                        Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+                      </td>
+                      <td
+                        class="lg:w-[566px] lg:min-w-[566px] w-[304px] md:min-w-[336px] min-w-[221px] p-0"
+                      >
+                        <div class="flex items-center">
+                          <p
+                            class="flex-1 py-2 border-r-[1px] text-center text-base font-normal text-secondary-text"
+                          >
+                            200,000/giờ
+                          </p>
+                          <p
+                            class="flex-1 text-center text-base text-secondary-text"
+                          >
+                            400,000/giờ
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- footer table -->
+            <div
+              class="h-10 flex items-center justify-center lg:gap-[85px] md:gap-4 gap-2"
+              style="
+                background-image: linear-gradient(
+                  to right,
+                  #50c579 0%,
+                  #3ec2bb 50%,
+                  #2ebefa 100%
+                );
+              "
+            >
+              <a
+                href="tel:0968107500"
+                class="flex items-center hover:opacity-90"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M18.965 16.6102L17.792 15.4372C17.206 14.8512 16.256 14.8512 15.671 15.4372L14.749 16.3592C14.543 16.5652 14.231 16.6342 13.965 16.5172C12.629 15.9322 11.309 15.0452 10.132 13.8682C8.96002 12.6962 8.07602 11.3822 7.49002 10.0512C7.36802 9.77621 7.43902 9.45321 7.65202 9.24021L8.47802 8.41421C9.14902 7.74321 9.14902 6.79421 8.56302 6.20821L7.39002 5.03521C6.60902 4.25421 5.34302 4.25421 4.56202 5.03521L3.91002 5.68621C3.16902 6.42721 2.86002 7.49621 3.06002 8.55621C3.55402 11.1692 5.07202 14.0302 7.52102 16.4792C9.97002 18.9282 12.831 20.4462 15.444 20.9402C16.504 21.1402 17.573 20.8312 18.314 20.0902L18.965 19.4392C19.746 18.6582 19.746 17.3922 18.965 16.6102V16.6102Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13 6.99109C14.031 6.97709 15.067 7.35909 15.854 8.14609"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.682 5.31811C17.113 3.74911 15.056 2.96411 13 2.96411"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.009 11C17.023 9.969 16.641 8.933 15.854 8.146"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.682 5.31812C20.251 6.88712 21.036 8.94412 21.036 11.0001"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="text-sm font-medium text-white">Hotline: 1900 1806</p>
+              </a>
+              <a
+                href="https://benhvienphuongdong.vn"
+                target="_blank"
+                class="flex items-center hover:opacity-90"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M12 3.1001C16.667 8.0271 16.667 15.9731 12 20.9001"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 20.9001C7.33301 15.9731 7.33301 8.0271 12 3.1001"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 3C16.982 3 21 7.018 21 12C21 16.982 16.982 21 12 21"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 21C7.018 21 3 16.982 3 12C3 7.018 7.018 3 12 3"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.51001 9H20.49"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.51001 15H20.49"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="text-sm font-medium text-white">
+                  https://benhvienphuongdong.vn
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <!-- hình tròn đường viền -->
+          <img
+            src="img/hinhtron.png"
+            alt="icon"
+            class="md:w-[360px] md:h-[360px] w-[272px] h-[272px] object-contain absolute right-0 bottom-[-5%]"
           />
         </div>
       </main>
