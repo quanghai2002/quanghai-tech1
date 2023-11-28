@@ -52,10 +52,29 @@ document.addEventListener('click', (e) => {
 })
 
 
+// slider 1 - banner
+var swiper = new Swiper(".mySwiper-banner", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
+
+
+
 const listSlider = document.querySelectorAll('.slider-q-hai');
 
 
-// slider
+// slider 2
 let swiperSale = new Swiper(".SaleSwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -74,7 +93,7 @@ let swiperSale = new Swiper(".SaleSwiper", {
       spaceBetween: 6,
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 5,
       spaceBetween: 6,
     },
   },
