@@ -85,15 +85,15 @@ let swiperSale = new Swiper(".SaleSwiper", {
   breakpoints: {
     640: {
       slidesPerView: 1,
-      spaceBetween: 1,
+      spaceBetween: 10,
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 6,
+      spaceBetween: 10,
     },
     1024: {
       slidesPerView: 5,
-      spaceBetween: 6,
+      spaceBetween: 20,
     },
   },
 
@@ -102,6 +102,7 @@ let swiperSale = new Swiper(".SaleSwiper", {
     slideChange: function () {
       // Lấy index của slide đang active
       let activeSlideIndex = this.activeIndex;
+
 
 
       // Xóa class 'quanghai-active-slider' từ tất cả các slide
