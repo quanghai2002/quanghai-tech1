@@ -69,8 +69,6 @@ var swiper = new Swiper(".mySwiper-banner", {
 
 
 
-
-
 const listSlider = document.querySelectorAll('.slider-q-hai');
 
 
@@ -78,6 +76,7 @@ const listSlider = document.querySelectorAll('.slider-q-hai');
 let swiperSale = new Swiper(".SaleSwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
+  loop: true,
   // Navigation arrows
   navigation: {
     nextEl: ".abc_next",
@@ -86,7 +85,7 @@ let swiperSale = new Swiper(".SaleSwiper", {
   breakpoints: {
     640: {
       slidesPerView: 1,
-      spaceBetween: 6,
+      spaceBetween: 1,
     },
     768: {
       slidesPerView: 3,
@@ -103,16 +102,44 @@ let swiperSale = new Swiper(".SaleSwiper", {
     slideChange: function () {
       // Lấy index của slide đang active
       let activeSlideIndex = this.activeIndex;
-      listSlider.forEach((item, index) => {
-        if (activeSlideIndex === index) {
-          let oldActive = document.querySelector('.quanghai-active-slider');
 
-          if (oldActive) {
-            oldActive.classList.remove('quanghai-active-slider');
-          }
-          item.classList.add('quanghai-active-slider');
-        }
-      })
+
+      // Xóa class 'quanghai-active-slider' từ tất cả các slide
+      document.querySelectorAll('.quanghai-active-slider').forEach((item) => {
+        item.classList.remove('quanghai-active-slider');
+      });
+
+      // Thêm class 'quanghai-active-slider' cho slide hiện tại
+      this.slides[activeSlideIndex].classList.add('quanghai-active-slider');
+
+
     },
   },
+});
+
+// slider 3
+let swiper3 = new Swiper(".Swipper3", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: ".next-3",
+    prevEl: ".prev-3",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 6,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 6,
+    },
+    1024: {
+      slidesPerView: 9,
+      spaceBetween: 6,
+    },
+  },
+
 });
