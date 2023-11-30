@@ -14,220 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!-- styles css global -->
-    <style>
-      #root {
-        min-height: 100vh;
-      }
-
-      .slider-q-hai {
-        transition: all 0.3s linear;
-      }
-      .slider-q-hai:hover .quanghai-item {
-        background: var(
-          --dd-400,
-          linear-gradient(90deg, #50c577 0%, #2dbefc 100%)
-        );
-      }
-      .slider-q-hai:hover .quanghai-text {
-        color: white;
-      }
-      .slider-q-hai:hover .quanghai-text-2 {
-        color: white;
-      }
-      .slider-q-hai:hover .quanghai-text-3 {
-        color: white;
-      }
-      .slider-q-hai:hover .quanghai-btn {
-        background: linear-gradient(180deg, #ffb469 0%, #e57709 100%);
-        color: white;
-      }
-
-      .quanghai-active-slider .quanghai-item {
-        background: var(
-          --dd-400,
-          linear-gradient(90deg, #50c577 0%, #2dbefc 100%)
-        );
-      }
-      .quanghai-active-slider .quanghai-text {
-        color: white;
-      }
-      .quanghai-active-slider .quanghai-text-2 {
-        color: white;
-      }
-      .quanghai-active-slider .quanghai-text-3 {
-        color: white;
-      }
-
-      .quanghai-active-slider .quanghai-btn {
-        background: linear-gradient(180deg, #ffb469 0%, #e57709 100%);
-        color: white;
-      }
-
-      .quanghai-price {
-        border-radius: 0px 0px 24px 24px;
-        border-right: 2px solid #2dbefc;
-        border-bottom: 2px solid #50c577;
-        border-left: 2px solid #50c577;
-      }
-
-      /* slider */
-      .abc_next,
-      .abc_prev {
-        -webkit-tap-highlight-color: transparent;
-      }
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      .SaleSwiper .swiper-slide {
-        max-width: 290px;
-        width: 290px !important;
-      }
-
-      #footer {
-        background: linear-gradient(90deg, #1cab55 0%, #04a4ec 100%);
-      }
-
-      /* .mySwiper-banner .swiper-pagination-bullet {
-        padding: 6px;
-      }
-
-      */
-
-      .wrapslider-3 img {
-        max-height: 371px !important;
-        object-fit: cover !important;
-        width: 248px !important;
-        cursor: pointer;
-        margin: 0 5px;
-      }
-      .btn {
-        -webkit-tap-highlight-color: transparent;
-      }
-      @media (max-width: 739px) {
-        .btn::after {
-          font-size: 26px;
-        }
-      }
-
-      .text-table-qh {
-        word-break: break-word;
-      }
-
-      .btn-quanghai {
-        font-size: 16px;
-        font-weight: 500;
-        color: white;
-        padding: 13.5px 35px;
-        border-radius: 100px;
-        background: var(
-          --dd-button,
-          linear-gradient(180deg, #ffb469 0%, #e57709 100%)
-        );
-        box-shadow: 0px 7px 20px 0px rgba(212, 166, 0, 0.19);
-        transition: all 0.3s linear;
-      }
-      .btn-quanghai:hover {
-        opacity: 0.9;
-        background: var(
-          --dd-button,
-          linear-gradient(45deg, #e57709 0%, #ffb469 100%)
-        );
-      }
-
-      .seacrh-bs {
-        color: white;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: 500;
-        display: flex;
-        height: 46px;
-        padding: 12px 32px 12px 28px;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        border-radius: 100px;
-        background: var(
-          --dd-button,
-          linear-gradient(180deg, #ffb469 0%, #e57709 100%)
-        );
-        box-shadow: 0px 7px 20px 0px rgba(212, 166, 0, 0.19);
-        transition: all 0.3s linear;
-      }
-
-      .seacrh-bs:hover {
-        background: var(
-          --dd-button,
-          linear-gradient(45deg, #e57709 0%, #ffb469 100%)
-        );
-      }
-
-      .content-bacsi {
-        background-image: url("./img/vien2.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        z-index: 99;
-      }
-
-      .text-5 {
-        padding-left: 38px;
-        @media (max-width: 739px) {
-          padding-left: 0px;
-        }
-      }
-      .text-6 {
-        padding-right: 38px;
-        @media (max-width: 739px) {
-          padding-right: 0px;
-        }
-      }
-
-      .btn-action-phone {
-        display: flex;
-        height: 46px;
-        padding: 12px 32px 12px 28px;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        color: white;
-        border-radius: 100px;
-        background: var(
-          --dd-button,
-          linear-gradient(180deg, #ffb469 0%, #e57709 100%)
-        );
-        box-shadow: 0px 7px 20px 0px rgba(212, 166, 0, 0.19);
-        transition: all 0.3s linear;
-      }
-      .btn-action-phone:hover {
-        background: var(
-          --dd-button,
-          linear-gradient(40deg, #e57709 0%, #ffb469 100%)
-        );
-        opacity: 0.9;
-      }
-
-      .chart-1 {
-        cursor: pointer;
-        transition: all 0.6s linear;
-      }
-      .chart-1 svg {
-        transition: all 0.6s linear;
-      }
-      .chart-1:hover svg {
-        zoom: 1.2;
-      }
-
-      .test-icon-chart {
-        position: relative;
-      }
-
-      .wrap-icon-chart-right:hover svg {
-        transition: all 0.3s linear;
-        zoom: 1.2;
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
@@ -278,8 +65,8 @@
           <div>
             <a
               href="tel:0968107500"
-              class="hidden md:flex items-center sm:gap-2 gap-2 bg-gradient-to-r from-gradient-1 to-gradient-2 py-[8.2px] px-3 sm:px-[20.8px] rounded-[40px] hover:bg-gradient-to-r hover:from-gradient-2 hover:to-gradient-1 hover:transition-all"
-              style="box-shadow: 0px 4px 20px 0px rgba(212, 166, 0, 0.19)"
+              class="hidden md:flex items-center sm:gap-2 gap-2 rounded-[40px]"
+              id="contact-phone-btn"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -959,14 +746,15 @@
               <ul>
                 <li>
                   <div>
-                    <div class="flex items-center gap-1 mb-2">
+                    <div
+                      class="flex items-center lg:gap-1 gap-2 mb-2 justify-start"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="12"
                         height="12"
                         viewBox="0 0 12 12"
                         fill="none"
-                        class="hidden md:inline-block"
                       >
                         <circle
                           cx="6"
@@ -989,18 +777,20 @@
                           </linearGradient>
                         </defs>
                       </svg>
-                      <p class="text-base font-medium">
+                      <p class="text-base font-medium text-left">
                         Đội ngũ bác sĩ sản khoa giàu kinh nghiệm
                       </p>
                     </div>
-                    <div class="flex items-center gap-1 mb-2 lg:ml-6">
+                    <div
+                      class="flex items-center lg:gap-1 gap-2 mb-2 lg:ml-6 justify-start"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="12"
                         height="12"
                         viewBox="0 0 12 12"
                         fill="none"
-                        class="hidden md:inline-block"
+                        class="w-3 h-3 object-cover"
                       >
                         <circle
                           cx="6"
@@ -1023,7 +813,7 @@
                           </linearGradient>
                         </defs>
                       </svg>
-                      <p class="text-base font-medium">
+                      <p class="text-base font-medium text-left">
                         Chăm sóc mẹ và bé toàn diện trước trong và sau sinh
                       </p>
                     </div>
@@ -1031,14 +821,15 @@
                 </li>
                 <li>
                   <div>
-                    <div class="flex items-center gap-1 mb-2">
+                    <div
+                      class="flex items-center lg:gap-1 gap-2 mb-2 justify-start"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="12"
                         height="12"
                         viewBox="0 0 12 12"
                         fill="none"
-                        class="hidden md:inline-block"
                       >
                         <circle
                           cx="6"
@@ -1061,18 +852,19 @@
                           </linearGradient>
                         </defs>
                       </svg>
-                      <p class="text-base font-medium">
+                      <p class="text-base font-medium text-left">
                         Không gian đẳng cấp với trang thiết bị y tế hiện đại
                       </p>
                     </div>
-                    <div class="flex items-center gap-1 mb-2 lg:ml-6">
+                    <div
+                      class="flex items-center lg:gap-1 gap-2 mb-2 lg:ml-6 justify-start"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="12"
                         height="12"
                         viewBox="0 0 12 12"
                         fill="none"
-                        class="hidden md:inline-block"
                       >
                         <circle
                           cx="6"
@@ -1095,7 +887,7 @@
                           </linearGradient>
                         </defs>
                       </svg>
-                      <p class="text-base font-medium">
+                      <p class="text-base font-medium text-left">
                         Đi sinh sung sướng như đi nghỉ dưỡng
                       </p>
                     </div>
@@ -1103,14 +895,13 @@
                 </li>
                 <li>
                   <div>
-                    <div class="flex items-center gap-1 mb-2">
+                    <div class="flex items-center lg:gap-1 gap-2 mb-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="12"
                         height="12"
                         viewBox="0 0 12 12"
                         fill="none"
-                        class="hidden md:inline-block"
                       >
                         <circle
                           cx="6"
@@ -1133,18 +924,17 @@
                           </linearGradient>
                         </defs>
                       </svg>
-                      <p class="text-base font-medium">
+                      <p class="text-base font-medium text-left">
                         Con yêu chào đời với những điều kiện tốt nhất
                       </p>
                     </div>
-                    <div class="flex items-center gap-1 mb-2 lg:ml-6">
+                    <div class="flex items-center lg:gap-1 gap-2 mb-2 lg:ml-6">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="12"
                         height="12"
                         viewBox="0 0 12 12"
                         fill="none"
-                        class="hidden md:inline-block"
                       >
                         <circle
                           cx="6"
@@ -1167,7 +957,7 @@
                           </linearGradient>
                         </defs>
                       </svg>
-                      <p class="text-base font-medium">
+                      <p class="text-base font-medium text-left">
                         Thanh toán đồng thời bảo hiểm Y tế, bảo hiểm bảo lãnh
                       </p>
                     </div>
@@ -1175,14 +965,13 @@
                 </li>
                 <li>
                   <div>
-                    <div class="flex items-center gap-1 mb-2">
+                    <div class="flex items-center lg:gap-1 gap-2 mb-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="12"
                         height="12"
                         viewBox="0 0 12 12"
                         fill="none"
-                        class="hidden md:inline-block"
                       >
                         <circle
                           cx="6"
@@ -1205,7 +994,7 @@
                           </linearGradient>
                         </defs>
                       </svg>
-                      <p class="text-base font-medium">
+                      <p class="text-base font-medium text-left">
                         Bảng giá các gói sinh tại Bệnh viện Phương Đông
                       </p>
                     </div>
@@ -1932,7 +1721,7 @@
           </div>
         </section>
 
-        <!-- content 4 -->
+        <!-- content đội ngũ bác sĩ đa khoa phương đông -->
         <section>
           <div class="container max-w-[1408px] mx-auto mt-14">
             <!-- title -->
@@ -1988,233 +1777,224 @@
                 <p>Tìm bác sĩ</p>
               </div>
             </div>
-            <!-- content -->
-            <div class="lg:mt-[100px] md:mt-[80px] mt-[60px]">
-              <div>
+            <!-- content  đội ngũ bác sĩ đa khoa Phương Đông-->
+            <div class="lg:mt-[60px] md:mt-[40px] mt-[30px]">
+              <!-- test grid column 1 -->
+              <div
+                class="grid md:gap-8 lg:grid-cols-2 lg:grid-rows-1 lg:px-0 px-6"
+              >
                 <div
-                  class="md:flex md:items-center md:justify-between lg:flex-row md:flex-col gap-[80px] lg:gap-0 px-3 lg:px-0"
+                  class="flex items-center gap-4 md:mb-0 mb-[36px] lg:px-4 md:flex-row flex-col"
                 >
-                  <div class="flex items-center gap-4 md:mb-0 mb-[36px]">
+                  <div class="relative">
+                    <img src="img/anh-bac-si-1.png" alt="anh" />
+                  </div>
+                  <div class="md:text-left text-center">
+                    <h1 class="text-2xl font-medium mb-2">
+                      BS: NGUYỄN TRUNG CHÍNH
+                    </h1>
+                    <p class="text-base text-secondary-text mb-4">
+                      PGS.TS. Bác sĩ Ung bướu - Giám đốc Bệnh viện Đa khoa
+                      Phương Đông
+                    </p>
+                    <p class="text-base text-secondary-text mb-2">
+                      Kinh nghiệm: <strong>20 năm</strong>
+                    </p>
                     <div
-                      class="relative md:pt-[260px] pt-[106px] w-[260px] z-90 content-bacsi"
+                      class="flex items-center gap-2 md:justify-start justify-center"
                     >
-                      <img
-                        src="./img/bacsi1.png"
-                        alt="anh"
-                        class="absolute bottom-[10%] left-[2%] w-[90%]"
-                      />
-                    </div>
-                    <div>
-                      <h1 class="text-2xl font-medium mb-2">
-                        BS: NGUYỄN TRUNG CHÍNH
-                      </h1>
-                      <p class="text-base text-secondary-text mb-4">
-                        PGS.TS. Bác sĩ Ung bướu - Giám đốc Bệnh viện Đa khoa
-                        Phương Đông
-                      </p>
-                      <p class="text-base text-secondary-text mb-2">
-                        Kinh nghiệm: <strong>20 năm</strong>
-                      </p>
-                      <div class="flex items-center gap-2">
-                        <p class="text-base text-secondary-text">Xếp hạng:</p>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="92"
-                          height="16"
-                          viewBox="0 0 92 16"
-                          fill="none"
-                        >
-                          <path
-                            d="M7.10616 1.27256C7.50337 0.692983 8.3587 0.692984 8.75591 1.27256L10.5271 3.85687C10.6571 4.04661 10.8485 4.18571 11.0692 4.25075L14.0743 5.13661C14.7483 5.33528 15.0126 6.14874 14.5841 6.70561L12.6736 9.18867C12.5333 9.37096 12.4602 9.59604 12.4665 9.82597L12.5527 12.9578C12.572 13.6601 11.88 14.1629 11.218 13.9275L8.26608 12.8778C8.04936 12.8007 7.8127 12.8007 7.59599 12.8778L4.64407 13.9275C3.98206 14.1629 3.29009 13.6601 3.30941 12.9578L3.39554 9.82596C3.40187 9.59604 3.32873 9.37096 3.18847 9.18867L1.27795 6.70561C0.849489 6.14874 1.1138 5.33528 1.78775 5.13661L4.7929 4.25075C5.01352 4.18571 5.20499 4.0466 5.33502 3.85687L7.10616 1.27256Z"
-                            fill="#FFC700"
-                          />
-                          <path
-                            d="M26.1406 1.27256C26.5378 0.692983 27.3931 0.692984 27.7903 1.27256L29.5615 3.85687C29.6915 4.04661 29.883 4.18571 30.1036 4.25075L33.1087 5.13661C33.7827 5.33528 34.047 6.14874 33.6185 6.70561L31.708 9.18867C31.5678 9.37096 31.4946 9.59604 31.501 9.82597L31.5871 12.9578C31.6064 13.6601 30.9144 14.1629 30.2524 13.9275L27.3005 12.8778C27.0838 12.8007 26.8471 12.8007 26.6304 12.8778L23.6785 13.9275C23.0165 14.1629 22.3245 13.6601 22.3438 12.9578L22.43 9.82596C22.4363 9.59604 22.3632 9.37096 22.2229 9.18867L20.3124 6.70561C19.8839 6.14874 20.1482 5.33528 20.8222 5.13661L23.8273 4.25075C24.0479 4.18571 24.2394 4.0466 24.3694 3.85687L26.1406 1.27256Z"
-                            fill="#FFC700"
-                          />
-                          <path
-                            d="M45.1751 1.27256C45.5723 0.692983 46.4277 0.692984 46.8249 1.27256L48.596 3.85687C48.7261 4.04661 48.9175 4.18571 49.1381 4.25075L52.1433 5.13661C52.8172 5.33528 53.0815 6.14874 52.6531 6.70561L50.7426 9.18867C50.6023 9.37096 50.5292 9.59604 50.5355 9.82597L50.6216 12.9578C50.641 13.6601 49.949 14.1629 49.287 13.9275L46.3351 12.8778C46.1183 12.8007 45.8817 12.8007 45.665 12.8778L42.713 13.9275C42.051 14.1629 41.3591 13.6601 41.3784 12.9578L41.4645 9.82596C41.4708 9.59604 41.3977 9.37096 41.2574 9.18867L39.3469 6.70561C38.9185 6.14874 39.1828 5.33528 39.8567 5.13661L42.8619 4.25075C43.0825 4.18571 43.274 4.0466 43.404 3.85687L45.1751 1.27256Z"
-                            fill="#FFC700"
-                          />
-                          <path
-                            d="M64.2096 1.27256C64.6068 0.692983 65.4621 0.692984 65.8593 1.27256L67.6304 3.85687C67.7605 4.04661 67.9519 4.18571 68.1726 4.25075L71.1777 5.13661C71.8517 5.33528 72.116 6.14874 71.6875 6.70561L69.777 9.18867C69.6367 9.37096 69.5636 9.59604 69.5699 9.82597L69.6561 12.9578C69.6754 13.6601 68.9834 14.1629 68.3214 13.9275L65.3695 12.8778C65.1528 12.8007 64.9161 12.8007 64.6994 12.8778L61.7475 13.9275C61.0855 14.1629 60.3935 13.6601 60.4128 12.9578L60.4989 9.82596C60.5053 9.59604 60.4321 9.37096 60.2919 9.18867L58.3813 6.70561C57.9529 6.14874 58.2172 5.33528 58.8911 5.13661L61.8963 4.25075C62.1169 4.18571 62.3084 4.0466 62.4384 3.85687L64.2096 1.27256Z"
-                            fill="#FFC700"
-                          />
-                          <path
-                            d="M83.2441 1.27256C83.6413 0.692983 84.4966 0.692984 84.8938 1.27256L86.665 3.85687C86.795 4.04661 86.9865 4.18571 87.2071 4.25075L90.2123 5.13661C90.8862 5.33528 91.1505 6.14874 90.7221 6.70561L88.8115 9.18867C88.6713 9.37096 88.5981 9.59604 88.6045 9.82597L88.6906 12.9578C88.7099 13.6601 88.0179 14.1629 87.3559 13.9275L84.404 12.8778C84.1873 12.8007 83.9506 12.8007 83.7339 12.8778L80.782 13.9275C80.12 14.1629 79.428 13.6601 79.4473 12.9578L79.5335 9.82596C79.5398 9.59604 79.4667 9.37096 79.3264 9.18867L77.4159 6.70561C76.9874 6.14874 77.2517 5.33528 77.9257 5.13661L80.9308 4.25075C81.1515 4.18571 81.3429 4.0466 81.473 3.85687L83.2441 1.27256Z"
-                            fill="#FFC700"
-                          />
-                        </svg>
-                      </div>
+                      <p class="text-base text-secondary-text">Xếp hạng:</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="92"
+                        height="16"
+                        viewBox="0 0 92 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.10616 1.27256C7.50337 0.692983 8.3587 0.692984 8.75591 1.27256L10.5271 3.85687C10.6571 4.04661 10.8485 4.18571 11.0692 4.25075L14.0743 5.13661C14.7483 5.33528 15.0126 6.14874 14.5841 6.70561L12.6736 9.18867C12.5333 9.37096 12.4602 9.59604 12.4665 9.82597L12.5527 12.9578C12.572 13.6601 11.88 14.1629 11.218 13.9275L8.26608 12.8778C8.04936 12.8007 7.8127 12.8007 7.59599 12.8778L4.64407 13.9275C3.98206 14.1629 3.29009 13.6601 3.30941 12.9578L3.39554 9.82596C3.40187 9.59604 3.32873 9.37096 3.18847 9.18867L1.27795 6.70561C0.849489 6.14874 1.1138 5.33528 1.78775 5.13661L4.7929 4.25075C5.01352 4.18571 5.20499 4.0466 5.33502 3.85687L7.10616 1.27256Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M26.1406 1.27256C26.5378 0.692983 27.3931 0.692984 27.7903 1.27256L29.5615 3.85687C29.6915 4.04661 29.883 4.18571 30.1036 4.25075L33.1087 5.13661C33.7827 5.33528 34.047 6.14874 33.6185 6.70561L31.708 9.18867C31.5678 9.37096 31.4946 9.59604 31.501 9.82597L31.5871 12.9578C31.6064 13.6601 30.9144 14.1629 30.2524 13.9275L27.3005 12.8778C27.0838 12.8007 26.8471 12.8007 26.6304 12.8778L23.6785 13.9275C23.0165 14.1629 22.3245 13.6601 22.3438 12.9578L22.43 9.82596C22.4363 9.59604 22.3632 9.37096 22.2229 9.18867L20.3124 6.70561C19.8839 6.14874 20.1482 5.33528 20.8222 5.13661L23.8273 4.25075C24.0479 4.18571 24.2394 4.0466 24.3694 3.85687L26.1406 1.27256Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M45.1751 1.27256C45.5723 0.692983 46.4277 0.692984 46.8249 1.27256L48.596 3.85687C48.7261 4.04661 48.9175 4.18571 49.1381 4.25075L52.1433 5.13661C52.8172 5.33528 53.0815 6.14874 52.6531 6.70561L50.7426 9.18867C50.6023 9.37096 50.5292 9.59604 50.5355 9.82597L50.6216 12.9578C50.641 13.6601 49.949 14.1629 49.287 13.9275L46.3351 12.8778C46.1183 12.8007 45.8817 12.8007 45.665 12.8778L42.713 13.9275C42.051 14.1629 41.3591 13.6601 41.3784 12.9578L41.4645 9.82596C41.4708 9.59604 41.3977 9.37096 41.2574 9.18867L39.3469 6.70561C38.9185 6.14874 39.1828 5.33528 39.8567 5.13661L42.8619 4.25075C43.0825 4.18571 43.274 4.0466 43.404 3.85687L45.1751 1.27256Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M64.2096 1.27256C64.6068 0.692983 65.4621 0.692984 65.8593 1.27256L67.6304 3.85687C67.7605 4.04661 67.9519 4.18571 68.1726 4.25075L71.1777 5.13661C71.8517 5.33528 72.116 6.14874 71.6875 6.70561L69.777 9.18867C69.6367 9.37096 69.5636 9.59604 69.5699 9.82597L69.6561 12.9578C69.6754 13.6601 68.9834 14.1629 68.3214 13.9275L65.3695 12.8778C65.1528 12.8007 64.9161 12.8007 64.6994 12.8778L61.7475 13.9275C61.0855 14.1629 60.3935 13.6601 60.4128 12.9578L60.4989 9.82596C60.5053 9.59604 60.4321 9.37096 60.2919 9.18867L58.3813 6.70561C57.9529 6.14874 58.2172 5.33528 58.8911 5.13661L61.8963 4.25075C62.1169 4.18571 62.3084 4.0466 62.4384 3.85687L64.2096 1.27256Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M83.2441 1.27256C83.6413 0.692983 84.4966 0.692984 84.8938 1.27256L86.665 3.85687C86.795 4.04661 86.9865 4.18571 87.2071 4.25075L90.2123 5.13661C90.8862 5.33528 91.1505 6.14874 90.7221 6.70561L88.8115 9.18867C88.6713 9.37096 88.5981 9.59604 88.6045 9.82597L88.6906 12.9578C88.7099 13.6601 88.0179 14.1629 87.3559 13.9275L84.404 12.8778C84.1873 12.8007 83.9506 12.8007 83.7339 12.8778L80.782 13.9275C80.12 14.1629 79.428 13.6601 79.4473 12.9578L79.5335 9.82596C79.5398 9.59604 79.4667 9.37096 79.3264 9.18867L77.4159 6.70561C76.9874 6.14874 77.2517 5.33528 77.9257 5.13661L80.9308 4.25075C81.1515 4.18571 81.3429 4.0466 81.473 3.85687L83.2441 1.27256Z"
+                          fill="#FFC700"
+                        />
+                      </svg>
                     </div>
                   </div>
-                  <div class="flex items-center gap-4 md:mb-0 mb-[36px]">
+                </div>
+                <div
+                  class="flex items-center gap-4 md:mb-0 mb-[36px] lg:px-4 md:flex-row flex-col"
+                >
+                  <div class="relative">
+                    <img src="img/anh-bac-si-2.png" alt="anh" />
+                  </div>
+                  <div class="md:text-left text-center">
+                    <h1 class="text-2xl font-medium mb-2">
+                      BS: NGUYỄN HUY BẠO
+                    </h1>
+                    <p class="text-base text-secondary-text mb-4">
+                      PGS.TS. Bác sĩ Ung bướu - Giám đốc Bệnh viện Đa khoa
+                      Phương Đông
+                    </p>
+                    <p class="text-base text-secondary-text mb-2">
+                      Kinh nghiệm: <strong>20 năm</strong>
+                    </p>
                     <div
-                      class="relative md:pt-[260px] pt-[106px] w-[260px] z-90 content-bacsi"
+                      class="flex items-center gap-2 md:justify-start justify-center"
                     >
-                      <img
-                        src="./img/bacsi2.png"
-                        alt="anh"
-                        class="absolute bottom-[17%] left-[9%] w-[80%]"
-                      />
-                    </div>
-                    <div>
-                      <h1 class="text-2xl font-medium mb-2">
-                        BS: NGUYỄN HUY BẠO
-                      </h1>
-                      <p class="text-base text-secondary-text mb-4">
-                        PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa
-                        Phương Đông
-                      </p>
-                      <p class="text-base text-secondary-text mb-2">
-                        Kinh nghiệm: <strong>20 năm</strong>
-                      </p>
-                      <div class="flex items-center gap-2">
-                        <p class="text-base text-secondary-text">Xếp hạng:</p>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="92"
-                          height="16"
-                          viewBox="0 0 92 16"
-                          fill="none"
-                        >
-                          <path
-                            d="M7.10616 1.27256C7.50337 0.692983 8.3587 0.692984 8.75591 1.27256L10.5271 3.85687C10.6571 4.04661 10.8485 4.18571 11.0692 4.25075L14.0743 5.13661C14.7483 5.33528 15.0126 6.14874 14.5841 6.70561L12.6736 9.18867C12.5333 9.37096 12.4602 9.59604 12.4665 9.82597L12.5527 12.9578C12.572 13.6601 11.88 14.1629 11.218 13.9275L8.26608 12.8778C8.04936 12.8007 7.8127 12.8007 7.59599 12.8778L4.64407 13.9275C3.98206 14.1629 3.29009 13.6601 3.30941 12.9578L3.39554 9.82596C3.40187 9.59604 3.32873 9.37096 3.18847 9.18867L1.27795 6.70561C0.849489 6.14874 1.1138 5.33528 1.78775 5.13661L4.7929 4.25075C5.01352 4.18571 5.20499 4.0466 5.33502 3.85687L7.10616 1.27256Z"
-                            fill="#FFC700"
-                          />
-                          <path
-                            d="M26.1406 1.27256C26.5378 0.692983 27.3931 0.692984 27.7903 1.27256L29.5615 3.85687C29.6915 4.04661 29.883 4.18571 30.1036 4.25075L33.1087 5.13661C33.7827 5.33528 34.047 6.14874 33.6185 6.70561L31.708 9.18867C31.5678 9.37096 31.4946 9.59604 31.501 9.82597L31.5871 12.9578C31.6064 13.6601 30.9144 14.1629 30.2524 13.9275L27.3005 12.8778C27.0838 12.8007 26.8471 12.8007 26.6304 12.8778L23.6785 13.9275C23.0165 14.1629 22.3245 13.6601 22.3438 12.9578L22.43 9.82596C22.4363 9.59604 22.3632 9.37096 22.2229 9.18867L20.3124 6.70561C19.8839 6.14874 20.1482 5.33528 20.8222 5.13661L23.8273 4.25075C24.0479 4.18571 24.2394 4.0466 24.3694 3.85687L26.1406 1.27256Z"
-                            fill="#FFC700"
-                          />
-                          <path
-                            d="M45.1751 1.27256C45.5723 0.692983 46.4277 0.692984 46.8249 1.27256L48.596 3.85687C48.7261 4.04661 48.9175 4.18571 49.1381 4.25075L52.1433 5.13661C52.8172 5.33528 53.0815 6.14874 52.6531 6.70561L50.7426 9.18867C50.6023 9.37096 50.5292 9.59604 50.5355 9.82597L50.6216 12.9578C50.641 13.6601 49.949 14.1629 49.287 13.9275L46.3351 12.8778C46.1183 12.8007 45.8817 12.8007 45.665 12.8778L42.713 13.9275C42.051 14.1629 41.3591 13.6601 41.3784 12.9578L41.4645 9.82596C41.4708 9.59604 41.3977 9.37096 41.2574 9.18867L39.3469 6.70561C38.9185 6.14874 39.1828 5.33528 39.8567 5.13661L42.8619 4.25075C43.0825 4.18571 43.274 4.0466 43.404 3.85687L45.1751 1.27256Z"
-                            fill="#FFC700"
-                          />
-                          <path
-                            d="M64.2096 1.27256C64.6068 0.692983 65.4621 0.692984 65.8593 1.27256L67.6304 3.85687C67.7605 4.04661 67.9519 4.18571 68.1726 4.25075L71.1777 5.13661C71.8517 5.33528 72.116 6.14874 71.6875 6.70561L69.777 9.18867C69.6367 9.37096 69.5636 9.59604 69.5699 9.82597L69.6561 12.9578C69.6754 13.6601 68.9834 14.1629 68.3214 13.9275L65.3695 12.8778C65.1528 12.8007 64.9161 12.8007 64.6994 12.8778L61.7475 13.9275C61.0855 14.1629 60.3935 13.6601 60.4128 12.9578L60.4989 9.82596C60.5053 9.59604 60.4321 9.37096 60.2919 9.18867L58.3813 6.70561C57.9529 6.14874 58.2172 5.33528 58.8911 5.13661L61.8963 4.25075C62.1169 4.18571 62.3084 4.0466 62.4384 3.85687L64.2096 1.27256Z"
-                            fill="#FFC700"
-                          />
-                          <path
-                            d="M83.2441 1.27256C83.6413 0.692983 84.4966 0.692984 84.8938 1.27256L86.665 3.85687C86.795 4.04661 86.9865 4.18571 87.2071 4.25075L90.2123 5.13661C90.8862 5.33528 91.1505 6.14874 90.7221 6.70561L88.8115 9.18867C88.6713 9.37096 88.5981 9.59604 88.6045 9.82597L88.6906 12.9578C88.7099 13.6601 88.0179 14.1629 87.3559 13.9275L84.404 12.8778C84.1873 12.8007 83.9506 12.8007 83.7339 12.8778L80.782 13.9275C80.12 14.1629 79.428 13.6601 79.4473 12.9578L79.5335 9.82596C79.5398 9.59604 79.4667 9.37096 79.3264 9.18867L77.4159 6.70561C76.9874 6.14874 77.2517 5.33528 77.9257 5.13661L80.9308 4.25075C81.1515 4.18571 81.3429 4.0466 81.473 3.85687L83.2441 1.27256Z"
-                            fill="#FFC700"
-                          />
-                        </svg>
-                      </div>
+                      <p class="text-base text-secondary-text">Xếp hạng:</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="92"
+                        height="16"
+                        viewBox="0 0 92 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.10616 1.27256C7.50337 0.692983 8.3587 0.692984 8.75591 1.27256L10.5271 3.85687C10.6571 4.04661 10.8485 4.18571 11.0692 4.25075L14.0743 5.13661C14.7483 5.33528 15.0126 6.14874 14.5841 6.70561L12.6736 9.18867C12.5333 9.37096 12.4602 9.59604 12.4665 9.82597L12.5527 12.9578C12.572 13.6601 11.88 14.1629 11.218 13.9275L8.26608 12.8778C8.04936 12.8007 7.8127 12.8007 7.59599 12.8778L4.64407 13.9275C3.98206 14.1629 3.29009 13.6601 3.30941 12.9578L3.39554 9.82596C3.40187 9.59604 3.32873 9.37096 3.18847 9.18867L1.27795 6.70561C0.849489 6.14874 1.1138 5.33528 1.78775 5.13661L4.7929 4.25075C5.01352 4.18571 5.20499 4.0466 5.33502 3.85687L7.10616 1.27256Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M26.1406 1.27256C26.5378 0.692983 27.3931 0.692984 27.7903 1.27256L29.5615 3.85687C29.6915 4.04661 29.883 4.18571 30.1036 4.25075L33.1087 5.13661C33.7827 5.33528 34.047 6.14874 33.6185 6.70561L31.708 9.18867C31.5678 9.37096 31.4946 9.59604 31.501 9.82597L31.5871 12.9578C31.6064 13.6601 30.9144 14.1629 30.2524 13.9275L27.3005 12.8778C27.0838 12.8007 26.8471 12.8007 26.6304 12.8778L23.6785 13.9275C23.0165 14.1629 22.3245 13.6601 22.3438 12.9578L22.43 9.82596C22.4363 9.59604 22.3632 9.37096 22.2229 9.18867L20.3124 6.70561C19.8839 6.14874 20.1482 5.33528 20.8222 5.13661L23.8273 4.25075C24.0479 4.18571 24.2394 4.0466 24.3694 3.85687L26.1406 1.27256Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M45.1751 1.27256C45.5723 0.692983 46.4277 0.692984 46.8249 1.27256L48.596 3.85687C48.7261 4.04661 48.9175 4.18571 49.1381 4.25075L52.1433 5.13661C52.8172 5.33528 53.0815 6.14874 52.6531 6.70561L50.7426 9.18867C50.6023 9.37096 50.5292 9.59604 50.5355 9.82597L50.6216 12.9578C50.641 13.6601 49.949 14.1629 49.287 13.9275L46.3351 12.8778C46.1183 12.8007 45.8817 12.8007 45.665 12.8778L42.713 13.9275C42.051 14.1629 41.3591 13.6601 41.3784 12.9578L41.4645 9.82596C41.4708 9.59604 41.3977 9.37096 41.2574 9.18867L39.3469 6.70561C38.9185 6.14874 39.1828 5.33528 39.8567 5.13661L42.8619 4.25075C43.0825 4.18571 43.274 4.0466 43.404 3.85687L45.1751 1.27256Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M64.2096 1.27256C64.6068 0.692983 65.4621 0.692984 65.8593 1.27256L67.6304 3.85687C67.7605 4.04661 67.9519 4.18571 68.1726 4.25075L71.1777 5.13661C71.8517 5.33528 72.116 6.14874 71.6875 6.70561L69.777 9.18867C69.6367 9.37096 69.5636 9.59604 69.5699 9.82597L69.6561 12.9578C69.6754 13.6601 68.9834 14.1629 68.3214 13.9275L65.3695 12.8778C65.1528 12.8007 64.9161 12.8007 64.6994 12.8778L61.7475 13.9275C61.0855 14.1629 60.3935 13.6601 60.4128 12.9578L60.4989 9.82596C60.5053 9.59604 60.4321 9.37096 60.2919 9.18867L58.3813 6.70561C57.9529 6.14874 58.2172 5.33528 58.8911 5.13661L61.8963 4.25075C62.1169 4.18571 62.3084 4.0466 62.4384 3.85687L64.2096 1.27256Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M83.2441 1.27256C83.6413 0.692983 84.4966 0.692984 84.8938 1.27256L86.665 3.85687C86.795 4.04661 86.9865 4.18571 87.2071 4.25075L90.2123 5.13661C90.8862 5.33528 91.1505 6.14874 90.7221 6.70561L88.8115 9.18867C88.6713 9.37096 88.5981 9.59604 88.6045 9.82597L88.6906 12.9578C88.7099 13.6601 88.0179 14.1629 87.3559 13.9275L84.404 12.8778C84.1873 12.8007 83.9506 12.8007 83.7339 12.8778L80.782 13.9275C80.12 14.1629 79.428 13.6601 79.4473 12.9578L79.5335 9.82596C79.5398 9.59604 79.4667 9.37096 79.3264 9.18867L77.4159 6.70561C76.9874 6.14874 77.2517 5.33528 77.9257 5.13661L80.9308 4.25075C81.1515 4.18571 81.3429 4.0466 81.473 3.85687L83.2441 1.27256Z"
+                          fill="#FFC700"
+                        />
+                      </svg>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="md:mt-[60px] mt-[30px]">
+
+              <!-- test grid column 2 -->
+              <div
+                class="grid md:gap-8 lg:grid-cols-2 lg:grid-rows-1 lg:px-0 px-6 lg:mt-0 mt-6"
+              >
                 <div
-                  class="md:flex md:items-center md:justify-between lg:flex-row md:flex-col gap-[80px] lg:gap-0 px-3 lg:px-0"
+                  class="flex items-center gap-4 md:mb-0 mb-[36px] lg:px-4 lg:flex-row md:flex-row-reverse flex-col-reverse"
                 >
-                  <div class="flex items-center gap-2 md:mb-0 mb-[36px]">
-                    <div>
-                      <h1 class="text-2xl font-medium mb-2">
-                        DS: NGUYỄN THỊ KIM YẾN
-                      </h1>
-                      <p class="text-base text-secondary-text mb-4">
-                        PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa
-                        Phương Đông
-                      </p>
-                      <p class="text-base text-secondary-text mb-2">
-                        Kinh nghiệm: <strong>20 năm</strong>
-                      </p>
-                      <div class="flex items-center gap-2">
-                        <p class="text-base text-secondary-text">Xếp hạng:</p>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="92"
-                          height="16"
-                          viewBox="0 0 92 16"
-                          fill="none"
-                        >
-                          <path
-                            d="M7.10616 1.27256C7.50337 0.692983 8.3587 0.692984 8.75591 1.27256L10.5271 3.85687C10.6571 4.04661 10.8485 4.18571 11.0692 4.25075L14.0743 5.13661C14.7483 5.33528 15.0126 6.14874 14.5841 6.70561L12.6736 9.18867C12.5333 9.37096 12.4602 9.59604 12.4665 9.82597L12.5527 12.9578C12.572 13.6601 11.88 14.1629 11.218 13.9275L8.26608 12.8778C8.04936 12.8007 7.8127 12.8007 7.59599 12.8778L4.64407 13.9275C3.98206 14.1629 3.29009 13.6601 3.30941 12.9578L3.39554 9.82596C3.40187 9.59604 3.32873 9.37096 3.18847 9.18867L1.27795 6.70561C0.849489 6.14874 1.1138 5.33528 1.78775 5.13661L4.7929 4.25075C5.01352 4.18571 5.20499 4.0466 5.33502 3.85687L7.10616 1.27256Z"
-                            fill="#FFC700"
-                          />
-                          <path
-                            d="M26.1406 1.27256C26.5378 0.692983 27.3931 0.692984 27.7903 1.27256L29.5615 3.85687C29.6915 4.04661 29.883 4.18571 30.1036 4.25075L33.1087 5.13661C33.7827 5.33528 34.047 6.14874 33.6185 6.70561L31.708 9.18867C31.5678 9.37096 31.4946 9.59604 31.501 9.82597L31.5871 12.9578C31.6064 13.6601 30.9144 14.1629 30.2524 13.9275L27.3005 12.8778C27.0838 12.8007 26.8471 12.8007 26.6304 12.8778L23.6785 13.9275C23.0165 14.1629 22.3245 13.6601 22.3438 12.9578L22.43 9.82596C22.4363 9.59604 22.3632 9.37096 22.2229 9.18867L20.3124 6.70561C19.8839 6.14874 20.1482 5.33528 20.8222 5.13661L23.8273 4.25075C24.0479 4.18571 24.2394 4.0466 24.3694 3.85687L26.1406 1.27256Z"
-                            fill="#FFC700"
-                          />
-                          <path
-                            d="M45.1751 1.27256C45.5723 0.692983 46.4277 0.692984 46.8249 1.27256L48.596 3.85687C48.7261 4.04661 48.9175 4.18571 49.1381 4.25075L52.1433 5.13661C52.8172 5.33528 53.0815 6.14874 52.6531 6.70561L50.7426 9.18867C50.6023 9.37096 50.5292 9.59604 50.5355 9.82597L50.6216 12.9578C50.641 13.6601 49.949 14.1629 49.287 13.9275L46.3351 12.8778C46.1183 12.8007 45.8817 12.8007 45.665 12.8778L42.713 13.9275C42.051 14.1629 41.3591 13.6601 41.3784 12.9578L41.4645 9.82596C41.4708 9.59604 41.3977 9.37096 41.2574 9.18867L39.3469 6.70561C38.9185 6.14874 39.1828 5.33528 39.8567 5.13661L42.8619 4.25075C43.0825 4.18571 43.274 4.0466 43.404 3.85687L45.1751 1.27256Z"
-                            fill="#FFC700"
-                          />
-                          <path
-                            d="M64.2096 1.27256C64.6068 0.692983 65.4621 0.692984 65.8593 1.27256L67.6304 3.85687C67.7605 4.04661 67.9519 4.18571 68.1726 4.25075L71.1777 5.13661C71.8517 5.33528 72.116 6.14874 71.6875 6.70561L69.777 9.18867C69.6367 9.37096 69.5636 9.59604 69.5699 9.82597L69.6561 12.9578C69.6754 13.6601 68.9834 14.1629 68.3214 13.9275L65.3695 12.8778C65.1528 12.8007 64.9161 12.8007 64.6994 12.8778L61.7475 13.9275C61.0855 14.1629 60.3935 13.6601 60.4128 12.9578L60.4989 9.82596C60.5053 9.59604 60.4321 9.37096 60.2919 9.18867L58.3813 6.70561C57.9529 6.14874 58.2172 5.33528 58.8911 5.13661L61.8963 4.25075C62.1169 4.18571 62.3084 4.0466 62.4384 3.85687L64.2096 1.27256Z"
-                            fill="#FFC700"
-                          />
-                          <path
-                            d="M83.2441 1.27256C83.6413 0.692983 84.4966 0.692984 84.8938 1.27256L86.665 3.85687C86.795 4.04661 86.9865 4.18571 87.2071 4.25075L90.2123 5.13661C90.8862 5.33528 91.1505 6.14874 90.7221 6.70561L88.8115 9.18867C88.6713 9.37096 88.5981 9.59604 88.6045 9.82597L88.6906 12.9578C88.7099 13.6601 88.0179 14.1629 87.3559 13.9275L84.404 12.8778C84.1873 12.8007 83.9506 12.8007 83.7339 12.8778L80.782 13.9275C80.12 14.1629 79.428 13.6601 79.4473 12.9578L79.5335 9.82596C79.5398 9.59604 79.4667 9.37096 79.3264 9.18867L77.4159 6.70561C76.9874 6.14874 77.2517 5.33528 77.9257 5.13661L80.9308 4.25075C81.1515 4.18571 81.3429 4.0466 81.473 3.85687L83.2441 1.27256Z"
-                            fill="#FFC700"
-                          />
-                        </svg>
-                      </div>
-                    </div>
+                  <div class="md:text-left text-center">
+                    <h1 class="text-2xl font-medium mb-2">
+                      BS: TRẦN KINH TRANG
+                    </h1>
+                    <p class="text-base text-secondary-text mb-4">
+                      PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa
+                      Phương Đông
+                    </p>
+                    <p class="text-base text-secondary-text mb-2">
+                      Kinh nghiệm: <strong>20 năm</strong>
+                    </p>
                     <div
-                      class="relative md:pt-[260px] pt-[106px] w-[260px] z-90 content-bacsi"
+                      class="flex items-center gap-2 md:justify-start justify-center"
                     >
-                      <img
-                        src="./img/basi3.png"
-                        alt="anh"
-                        class="absolute bottom-[17%] left-[6%] w-[90%]"
-                      />
+                      <p class="text-base text-secondary-text">Xếp hạng:</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="92"
+                        height="16"
+                        viewBox="0 0 92 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.10616 1.27256C7.50337 0.692983 8.3587 0.692984 8.75591 1.27256L10.5271 3.85687C10.6571 4.04661 10.8485 4.18571 11.0692 4.25075L14.0743 5.13661C14.7483 5.33528 15.0126 6.14874 14.5841 6.70561L12.6736 9.18867C12.5333 9.37096 12.4602 9.59604 12.4665 9.82597L12.5527 12.9578C12.572 13.6601 11.88 14.1629 11.218 13.9275L8.26608 12.8778C8.04936 12.8007 7.8127 12.8007 7.59599 12.8778L4.64407 13.9275C3.98206 14.1629 3.29009 13.6601 3.30941 12.9578L3.39554 9.82596C3.40187 9.59604 3.32873 9.37096 3.18847 9.18867L1.27795 6.70561C0.849489 6.14874 1.1138 5.33528 1.78775 5.13661L4.7929 4.25075C5.01352 4.18571 5.20499 4.0466 5.33502 3.85687L7.10616 1.27256Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M26.1406 1.27256C26.5378 0.692983 27.3931 0.692984 27.7903 1.27256L29.5615 3.85687C29.6915 4.04661 29.883 4.18571 30.1036 4.25075L33.1087 5.13661C33.7827 5.33528 34.047 6.14874 33.6185 6.70561L31.708 9.18867C31.5678 9.37096 31.4946 9.59604 31.501 9.82597L31.5871 12.9578C31.6064 13.6601 30.9144 14.1629 30.2524 13.9275L27.3005 12.8778C27.0838 12.8007 26.8471 12.8007 26.6304 12.8778L23.6785 13.9275C23.0165 14.1629 22.3245 13.6601 22.3438 12.9578L22.43 9.82596C22.4363 9.59604 22.3632 9.37096 22.2229 9.18867L20.3124 6.70561C19.8839 6.14874 20.1482 5.33528 20.8222 5.13661L23.8273 4.25075C24.0479 4.18571 24.2394 4.0466 24.3694 3.85687L26.1406 1.27256Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M45.1751 1.27256C45.5723 0.692983 46.4277 0.692984 46.8249 1.27256L48.596 3.85687C48.7261 4.04661 48.9175 4.18571 49.1381 4.25075L52.1433 5.13661C52.8172 5.33528 53.0815 6.14874 52.6531 6.70561L50.7426 9.18867C50.6023 9.37096 50.5292 9.59604 50.5355 9.82597L50.6216 12.9578C50.641 13.6601 49.949 14.1629 49.287 13.9275L46.3351 12.8778C46.1183 12.8007 45.8817 12.8007 45.665 12.8778L42.713 13.9275C42.051 14.1629 41.3591 13.6601 41.3784 12.9578L41.4645 9.82596C41.4708 9.59604 41.3977 9.37096 41.2574 9.18867L39.3469 6.70561C38.9185 6.14874 39.1828 5.33528 39.8567 5.13661L42.8619 4.25075C43.0825 4.18571 43.274 4.0466 43.404 3.85687L45.1751 1.27256Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M64.2096 1.27256C64.6068 0.692983 65.4621 0.692984 65.8593 1.27256L67.6304 3.85687C67.7605 4.04661 67.9519 4.18571 68.1726 4.25075L71.1777 5.13661C71.8517 5.33528 72.116 6.14874 71.6875 6.70561L69.777 9.18867C69.6367 9.37096 69.5636 9.59604 69.5699 9.82597L69.6561 12.9578C69.6754 13.6601 68.9834 14.1629 68.3214 13.9275L65.3695 12.8778C65.1528 12.8007 64.9161 12.8007 64.6994 12.8778L61.7475 13.9275C61.0855 14.1629 60.3935 13.6601 60.4128 12.9578L60.4989 9.82596C60.5053 9.59604 60.4321 9.37096 60.2919 9.18867L58.3813 6.70561C57.9529 6.14874 58.2172 5.33528 58.8911 5.13661L61.8963 4.25075C62.1169 4.18571 62.3084 4.0466 62.4384 3.85687L64.2096 1.27256Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M83.2441 1.27256C83.6413 0.692983 84.4966 0.692984 84.8938 1.27256L86.665 3.85687C86.795 4.04661 86.9865 4.18571 87.2071 4.25075L90.2123 5.13661C90.8862 5.33528 91.1505 6.14874 90.7221 6.70561L88.8115 9.18867C88.6713 9.37096 88.5981 9.59604 88.6045 9.82597L88.6906 12.9578C88.7099 13.6601 88.0179 14.1629 87.3559 13.9275L84.404 12.8778C84.1873 12.8007 83.9506 12.8007 83.7339 12.8778L80.782 13.9275C80.12 14.1629 79.428 13.6601 79.4473 12.9578L79.5335 9.82596C79.5398 9.59604 79.4667 9.37096 79.3264 9.18867L77.4159 6.70561C76.9874 6.14874 77.2517 5.33528 77.9257 5.13661L80.9308 4.25075C81.1515 4.18571 81.3429 4.0466 81.473 3.85687L83.2441 1.27256Z"
+                          fill="#FFC700"
+                        />
+                      </svg>
                     </div>
                   </div>
-                  <div class="flex items-center gap-2">
-                    <div>
-                      <h1 class="text-2xl font-medium mb-2">
-                        BS: NGUYỄN HUY BẠO
-                      </h1>
-                      <p class="text-base text-secondary-text mb-4">
-                        PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa
-                        Phương Đông
-                      </p>
-                      <p class="text-base text-secondary-text mb-2">
-                        Kinh nghiệm: <strong>20 năm</strong>
-                      </p>
-                      <div class="flex items-center gap-2">
-                        <p class="text-base text-secondary-text">Xếp hạng:</p>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="92"
-                          height="16"
-                          viewBox="0 0 92 16"
-                          fill="none"
-                        >
-                          <path
-                            d="M7.10616 1.27256C7.50337 0.692983 8.3587 0.692984 8.75591 1.27256L10.5271 3.85687C10.6571 4.04661 10.8485 4.18571 11.0692 4.25075L14.0743 5.13661C14.7483 5.33528 15.0126 6.14874 14.5841 6.70561L12.6736 9.18867C12.5333 9.37096 12.4602 9.59604 12.4665 9.82597L12.5527 12.9578C12.572 13.6601 11.88 14.1629 11.218 13.9275L8.26608 12.8778C8.04936 12.8007 7.8127 12.8007 7.59599 12.8778L4.64407 13.9275C3.98206 14.1629 3.29009 13.6601 3.30941 12.9578L3.39554 9.82596C3.40187 9.59604 3.32873 9.37096 3.18847 9.18867L1.27795 6.70561C0.849489 6.14874 1.1138 5.33528 1.78775 5.13661L4.7929 4.25075C5.01352 4.18571 5.20499 4.0466 5.33502 3.85687L7.10616 1.27256Z"
-                            fill="#FFC700"
-                          />
-                          <path
-                            d="M26.1406 1.27256C26.5378 0.692983 27.3931 0.692984 27.7903 1.27256L29.5615 3.85687C29.6915 4.04661 29.883 4.18571 30.1036 4.25075L33.1087 5.13661C33.7827 5.33528 34.047 6.14874 33.6185 6.70561L31.708 9.18867C31.5678 9.37096 31.4946 9.59604 31.501 9.82597L31.5871 12.9578C31.6064 13.6601 30.9144 14.1629 30.2524 13.9275L27.3005 12.8778C27.0838 12.8007 26.8471 12.8007 26.6304 12.8778L23.6785 13.9275C23.0165 14.1629 22.3245 13.6601 22.3438 12.9578L22.43 9.82596C22.4363 9.59604 22.3632 9.37096 22.2229 9.18867L20.3124 6.70561C19.8839 6.14874 20.1482 5.33528 20.8222 5.13661L23.8273 4.25075C24.0479 4.18571 24.2394 4.0466 24.3694 3.85687L26.1406 1.27256Z"
-                            fill="#FFC700"
-                          />
-                          <path
-                            d="M45.1751 1.27256C45.5723 0.692983 46.4277 0.692984 46.8249 1.27256L48.596 3.85687C48.7261 4.04661 48.9175 4.18571 49.1381 4.25075L52.1433 5.13661C52.8172 5.33528 53.0815 6.14874 52.6531 6.70561L50.7426 9.18867C50.6023 9.37096 50.5292 9.59604 50.5355 9.82597L50.6216 12.9578C50.641 13.6601 49.949 14.1629 49.287 13.9275L46.3351 12.8778C46.1183 12.8007 45.8817 12.8007 45.665 12.8778L42.713 13.9275C42.051 14.1629 41.3591 13.6601 41.3784 12.9578L41.4645 9.82596C41.4708 9.59604 41.3977 9.37096 41.2574 9.18867L39.3469 6.70561C38.9185 6.14874 39.1828 5.33528 39.8567 5.13661L42.8619 4.25075C43.0825 4.18571 43.274 4.0466 43.404 3.85687L45.1751 1.27256Z"
-                            fill="#FFC700"
-                          />
-                          <path
-                            d="M64.2096 1.27256C64.6068 0.692983 65.4621 0.692984 65.8593 1.27256L67.6304 3.85687C67.7605 4.04661 67.9519 4.18571 68.1726 4.25075L71.1777 5.13661C71.8517 5.33528 72.116 6.14874 71.6875 6.70561L69.777 9.18867C69.6367 9.37096 69.5636 9.59604 69.5699 9.82597L69.6561 12.9578C69.6754 13.6601 68.9834 14.1629 68.3214 13.9275L65.3695 12.8778C65.1528 12.8007 64.9161 12.8007 64.6994 12.8778L61.7475 13.9275C61.0855 14.1629 60.3935 13.6601 60.4128 12.9578L60.4989 9.82596C60.5053 9.59604 60.4321 9.37096 60.2919 9.18867L58.3813 6.70561C57.9529 6.14874 58.2172 5.33528 58.8911 5.13661L61.8963 4.25075C62.1169 4.18571 62.3084 4.0466 62.4384 3.85687L64.2096 1.27256Z"
-                            fill="#FFC700"
-                          />
-                          <path
-                            d="M83.2441 1.27256C83.6413 0.692983 84.4966 0.692984 84.8938 1.27256L86.665 3.85687C86.795 4.04661 86.9865 4.18571 87.2071 4.25075L90.2123 5.13661C90.8862 5.33528 91.1505 6.14874 90.7221 6.70561L88.8115 9.18867C88.6713 9.37096 88.5981 9.59604 88.6045 9.82597L88.6906 12.9578C88.7099 13.6601 88.0179 14.1629 87.3559 13.9275L84.404 12.8778C84.1873 12.8007 83.9506 12.8007 83.7339 12.8778L80.782 13.9275C80.12 14.1629 79.428 13.6601 79.4473 12.9578L79.5335 9.82596C79.5398 9.59604 79.4667 9.37096 79.3264 9.18867L77.4159 6.70561C76.9874 6.14874 77.2517 5.33528 77.9257 5.13661L80.9308 4.25075C81.1515 4.18571 81.3429 4.0466 81.473 3.85687L83.2441 1.27256Z"
-                            fill="#FFC700"
-                          />
-                        </svg>
-                      </div>
-                    </div>
+                  <div class="relative">
+                    <img src="img/anh-bac-si-3.png" alt="anh" />
+                  </div>
+                </div>
+                <div
+                  class="flex items-center gap-4 md:mb-0 mb-[36px] lg:px-4 lg:flex-row md:flex-row-reverse flex-col-reverse"
+                >
+                  <div class="md:text-left text-center">
+                    <h1 class="text-2xl font-medium mb-2">
+                      DS: NGUYỄN THỊ KIM YẾN
+                    </h1>
+                    <p class="text-base text-secondary-text mb-4">
+                      PGS.TS. Bác sĩ Ung bướu - Phó giám đốc Bệnh viện Đa khoa
+                      Phương Đông
+                    </p>
+                    <p class="text-base text-secondary-text mb-2">
+                      Kinh nghiệm: <strong>20 năm</strong>
+                    </p>
                     <div
-                      class="relative md:pt-[260px] pt-[106px] w-[260px] z-90 content-bacsi"
+                      class="flex items-center gap-2 md:justify-start justify-center"
                     >
-                      <img
-                        src="./img/bacsi2.png"
-                        alt="anh"
-                        class="absolute bottom-[17%] left-[9%] w-[80%]"
-                      />
+                      <p class="text-base text-secondary-text">Xếp hạng:</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="92"
+                        height="16"
+                        viewBox="0 0 92 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.10616 1.27256C7.50337 0.692983 8.3587 0.692984 8.75591 1.27256L10.5271 3.85687C10.6571 4.04661 10.8485 4.18571 11.0692 4.25075L14.0743 5.13661C14.7483 5.33528 15.0126 6.14874 14.5841 6.70561L12.6736 9.18867C12.5333 9.37096 12.4602 9.59604 12.4665 9.82597L12.5527 12.9578C12.572 13.6601 11.88 14.1629 11.218 13.9275L8.26608 12.8778C8.04936 12.8007 7.8127 12.8007 7.59599 12.8778L4.64407 13.9275C3.98206 14.1629 3.29009 13.6601 3.30941 12.9578L3.39554 9.82596C3.40187 9.59604 3.32873 9.37096 3.18847 9.18867L1.27795 6.70561C0.849489 6.14874 1.1138 5.33528 1.78775 5.13661L4.7929 4.25075C5.01352 4.18571 5.20499 4.0466 5.33502 3.85687L7.10616 1.27256Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M26.1406 1.27256C26.5378 0.692983 27.3931 0.692984 27.7903 1.27256L29.5615 3.85687C29.6915 4.04661 29.883 4.18571 30.1036 4.25075L33.1087 5.13661C33.7827 5.33528 34.047 6.14874 33.6185 6.70561L31.708 9.18867C31.5678 9.37096 31.4946 9.59604 31.501 9.82597L31.5871 12.9578C31.6064 13.6601 30.9144 14.1629 30.2524 13.9275L27.3005 12.8778C27.0838 12.8007 26.8471 12.8007 26.6304 12.8778L23.6785 13.9275C23.0165 14.1629 22.3245 13.6601 22.3438 12.9578L22.43 9.82596C22.4363 9.59604 22.3632 9.37096 22.2229 9.18867L20.3124 6.70561C19.8839 6.14874 20.1482 5.33528 20.8222 5.13661L23.8273 4.25075C24.0479 4.18571 24.2394 4.0466 24.3694 3.85687L26.1406 1.27256Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M45.1751 1.27256C45.5723 0.692983 46.4277 0.692984 46.8249 1.27256L48.596 3.85687C48.7261 4.04661 48.9175 4.18571 49.1381 4.25075L52.1433 5.13661C52.8172 5.33528 53.0815 6.14874 52.6531 6.70561L50.7426 9.18867C50.6023 9.37096 50.5292 9.59604 50.5355 9.82597L50.6216 12.9578C50.641 13.6601 49.949 14.1629 49.287 13.9275L46.3351 12.8778C46.1183 12.8007 45.8817 12.8007 45.665 12.8778L42.713 13.9275C42.051 14.1629 41.3591 13.6601 41.3784 12.9578L41.4645 9.82596C41.4708 9.59604 41.3977 9.37096 41.2574 9.18867L39.3469 6.70561C38.9185 6.14874 39.1828 5.33528 39.8567 5.13661L42.8619 4.25075C43.0825 4.18571 43.274 4.0466 43.404 3.85687L45.1751 1.27256Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M64.2096 1.27256C64.6068 0.692983 65.4621 0.692984 65.8593 1.27256L67.6304 3.85687C67.7605 4.04661 67.9519 4.18571 68.1726 4.25075L71.1777 5.13661C71.8517 5.33528 72.116 6.14874 71.6875 6.70561L69.777 9.18867C69.6367 9.37096 69.5636 9.59604 69.5699 9.82597L69.6561 12.9578C69.6754 13.6601 68.9834 14.1629 68.3214 13.9275L65.3695 12.8778C65.1528 12.8007 64.9161 12.8007 64.6994 12.8778L61.7475 13.9275C61.0855 14.1629 60.3935 13.6601 60.4128 12.9578L60.4989 9.82596C60.5053 9.59604 60.4321 9.37096 60.2919 9.18867L58.3813 6.70561C57.9529 6.14874 58.2172 5.33528 58.8911 5.13661L61.8963 4.25075C62.1169 4.18571 62.3084 4.0466 62.4384 3.85687L64.2096 1.27256Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M83.2441 1.27256C83.6413 0.692983 84.4966 0.692984 84.8938 1.27256L86.665 3.85687C86.795 4.04661 86.9865 4.18571 87.2071 4.25075L90.2123 5.13661C90.8862 5.33528 91.1505 6.14874 90.7221 6.70561L88.8115 9.18867C88.6713 9.37096 88.5981 9.59604 88.6045 9.82597L88.6906 12.9578C88.7099 13.6601 88.0179 14.1629 87.3559 13.9275L84.404 12.8778C84.1873 12.8007 83.9506 12.8007 83.7339 12.8778L80.782 13.9275C80.12 14.1629 79.428 13.6601 79.4473 12.9578L79.5335 9.82596C79.5398 9.59604 79.4667 9.37096 79.3264 9.18867L77.4159 6.70561C76.9874 6.14874 77.2517 5.33528 77.9257 5.13661L80.9308 4.25075C81.1515 4.18571 81.3429 4.0466 81.473 3.85687L83.2441 1.27256Z"
+                          fill="#FFC700"
+                        />
+                      </svg>
                     </div>
+                  </div>
+                  <div class="relative">
+                    <img src="img/anh-bac-si-4.png" alt="anh" />
                   </div>
                 </div>
               </div>
@@ -3582,7 +3362,9 @@
               <div class="pt-[21px]">
                 <div class="mb-6">
                   <h1 class="text-2xl text-white">Theo dõi chúng tôi</h1>
-                  <div class="flex items-center gap-6 mt-[23px]">
+                  <div
+                    class="flex items-center gap-6 mt-[23px] md:justify-start justify-center"
+                  >
                     <a
                       href="https://www.facebook.com"
                       class="hover:opacity-[0.9]"
@@ -3670,7 +3452,11 @@
                       </svg>
                     </a>
                   </div>
-                  <img src="img/congthuong.png" alt="anh" class="mt-6" />
+                  <img
+                    src="img/congthuong.png"
+                    alt="anh"
+                    class="mt-6 md:mx-0 mx-auto"
+                  />
                 </div>
               </div>
             </div>

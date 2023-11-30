@@ -103,8 +103,6 @@ let swiperSale = new Swiper(".SaleSwiper", {
       // Lấy index của slide đang active
       let activeSlideIndex = this.activeIndex;
 
-
-
       // Xóa class 'quanghai-active-slider' từ tất cả các slide
       document.querySelectorAll('.quanghai-active-slider').forEach((item) => {
         item.classList.remove('quanghai-active-slider');
