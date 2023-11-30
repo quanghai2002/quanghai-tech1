@@ -85,7 +85,7 @@ let swiperSale = new Swiper(".SaleSwiper", {
   breakpoints: {
     640: {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 1,
     },
     768: {
       slidesPerView: 3,
@@ -142,3 +142,54 @@ let swiper3 = new Swiper(".Swipper3", {
   },
 
 });
+
+
+// khi click vào ảnh thì hiển thị ifraem
+const wrapImgIframe = document.querySelector('.img-iframe');
+const iframeLink = document.querySelector('.ifrarmeLinkYoutube');
+const imgDemo = document.querySelector('.icon-anh-demo');
+
+
+wrapImgIframe.addEventListener('click', () => {
+  const videoLink = 'https://www.youtube.com/embed/QIvIN8M91x4?si=6s84w-ev4JdbDBqc';
+  iframeLink.src = videoLink;
+  imgDemo.classList.add('hidden');
+  iframeLink.classList.remove('hidden');
+})
+
+
+// popup search tìm kiếm
+
+const btnOpenSeacrBS = document.querySelector('.seacrh-bs');
+const wrapContentPopup = document.querySelector('.content-modal-popup-search');
+const contentSeach = document.querySelector('.content-seacrh');
+
+
+
+
+const btnSeacrh = document.querySelector('.wrap-btn-seacrh');
+btnSeacrh.addEventListener('click', () => {
+  alert('xin chào');
+})
+
+const btnClosePopupSeacrh = document.querySelector('.icon-close-btn-seacrh');
+btnClosePopupSeacrh.addEventListener('click', () => {
+  wrapContentPopup.classList.toggle('hidden');
+})
+
+
+document.addEventListener('click', (e) => {
+  if (contentSeach.contains(e.target)) {
+    console.log('đang click vào bên trong')
+  }
+  else {
+
+    if (btnOpenSeacrBS.contains(e.target)) {
+      wrapContentPopup.classList.remove('hidden');
+      wrapContentPopup.classList.add('relative');
+    }
+    else {
+      wrapContentPopup.classList.add('hidden');
+    }
+  }
+})

@@ -18,6 +18,7 @@
 }
 
 .slider-q-hai {
+  margin: 0 10px !important;
   transition: all 0.3s linear;
 }
 .slider-q-hai:hover .quanghai-item {
@@ -154,6 +155,18 @@
     width: 8px;
     height: 8px;
   }
+
+  .SaleSwiper .swiper-slide {
+    max-width: 290px;
+    width: 260px !important;
+  }
+
+  /* 
+  .slider-q-hai {
+     margin: 0 3px !important; 
+    margin-left: 50px !important;
+  }
+  */
 }
 
 .text-table-qh {
@@ -267,7 +280,96 @@
   position: relative;
 }
 
+.wrap-icon-chart-right {
+  transition: all 2s linear;
+  cursor: pointer;
+}
 .wrap-icon-chart-right:hover svg {
   transition: all 0.3s linear;
   zoom: 1.2;
+}
+
+#btn-show-navbar:hover {
+  color: red;
+}
+
+.img-iframe {
+  cursor: pointer;
+  position: relative;
+  z-index: 999;
+}
+
+.icon-logo-youtube {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
+.wrap-pupup-modal-seacrh {
+}
+
+.content-seacrh {
+}
+
+.input-seacrh {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  caret-color: #f7a34f;
+  outline: none;
+}
+
+.input-seacrh:focus-visible {
+  border-color: #f7a34f;
+}
+
+.wrap-btn-seacrh {
+  border-radius: 100px;
+  width: 160px;
+  height: 42px;
+  background: var(
+    --dd-button,
+    linear-gradient(180deg, #ffb469 0%, #e57709 100%)
+  );
+  box-shadow: 0px 7px 20px 0px rgba(212, 166, 0, 0.19);
+}
+.btn-search {
+  font-size: 16px;
+}
+
+.wrap-btn-seacrh:hover {
+  opacity: 0.8;
+}
+
+.icon-close-btn-seacrh {
+  position: absolute;
+  top: 8px;
+  right: 7px;
+}
+
+.icon-close-btn-seacrh:hover {
+  cursor: pointer;
+  color: red;
+  transition: all 0.2s linear;
+}
+
+@media (max-width: 739px) {
+  .input-seacrh {
+    font-size: 14px;
+  }
+
+  .wrap-btn-seacrh {
+    width: 140px;
+    height: 39px;
+  }
+
+  .btn-search {
+    font-size: 14px;
+  }
 }
