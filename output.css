@@ -1687,6 +1687,10 @@ video {
     margin-top: 2.5rem;
   }
 
+  .md\:mt-3{
+    margin-top: 0.75rem;
+  }
+
   .md\:mt-5{
     margin-top: 1.25rem;
   }
@@ -1705,14 +1709,6 @@ video {
 
   .md\:mt-\[40px\]{
     margin-top: 40px;
-  }
-
-  .md\:mt-4{
-    margin-top: 1rem;
-  }
-
-  .md\:mt-3{
-    margin-top: 0.75rem;
   }
 
   .md\:inline-block{

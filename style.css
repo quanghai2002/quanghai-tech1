@@ -373,3 +373,7 @@
     font-size: 14px;
   }
 }
+
+.btn-web-kit-tab-highlight {
+  -webkit-tap-highlight-color: transparent;
+}

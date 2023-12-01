@@ -81,9 +81,8 @@ const isSliderTable = document.querySelector('.slider-sale-pc');
 
 // slider 2- sale- các sale trên pc
 let swiperSale = new Swiper(".SaleSwiper", {
-  slidesPerView: 1,
+
   spaceBetween: 1,
-  loopedSlides: 4,
   slidesPerView: 'auto',
   // centeredSlides: true,
   // Thay số này bằng số lượng slide thực tế trong loop
