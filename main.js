@@ -68,14 +68,25 @@ var swiper = new Swiper(".mySwiper-banner", {
 });
 
 
-
 const listSlider = document.querySelectorAll('.slider-q-hai');
 
+listSlider.forEach((item, index) => {
+  item.addEventListener('click', () => {
+    alert(`bạn đang tìm gì thông tin sale thứ:${Array.from(listSlider).indexOf(item)}`);
+  })
+})
 
-// slider 2
+
+const isSliderTable = document.querySelector('.slider-sale-pc');
+
+// slider 2- sale- các sale trên pc
 let swiperSale = new Swiper(".SaleSwiper", {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 1,
+  loopedSlides: 4,
+  slidesPerView: 'auto',
+  // centeredSlides: true,
+  // Thay số này bằng số lượng slide thực tế trong loop
   loop: true,
   // Navigation arrows
   navigation: {
@@ -92,10 +103,11 @@ let swiperSale = new Swiper(".SaleSwiper", {
       spaceBetween: 10,
     },
     1024: {
-      slidesPerView: 5,
-      spaceBetween: 20,
+      slidesPerView: 4,
+      spaceBetween: 10,
     },
   },
+
 
 
   on: {
@@ -104,23 +116,35 @@ let swiperSale = new Swiper(".SaleSwiper", {
       let activeSlideIndex = this.activeIndex;
 
       // Xóa class 'quanghai-active-slider' từ tất cả các slide
-      document.querySelectorAll('.quanghai-active-slider').forEach((item) => {
-        item.classList.remove('quanghai-active-slider');
-      });
+      // document.querySelectorAll('.quanghai-active-slider').forEach((item) => {
+      //   item.classList.remove('quanghai-active-slider');
+      // });
 
-      // Thêm class 'quanghai-active-slider' cho slide hiện tại
-      this.slides[activeSlideIndex].classList.add('quanghai-active-slider');
+      // // Thêm class 'quanghai-active-slider' cho slide hiện tại
+      // this.slides[activeSlideIndex].classList.add('quanghai-active-slider');
+    },
 
+    on: {
+      reachEnd: function () {
+        this.slideTo(0); // Chuyển đến slide đầu khi đạt đến cuối
+      },
 
+      reachBeginning: function () {
+        this.slideTo(this.slides.length - this.loopedSlides); // Chuyển đến slide cuối cùng khi đạt đến đầu
+      },
     },
   },
 });
+
+
 
 // slider 3
 let swiper3 = new Swiper(".Swipper3", {
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
+  // loopedSlides: 4,
+  slidesPerView: 'auto',
   // Navigation arrows
   navigation: {
     nextEl: ".next-3",
